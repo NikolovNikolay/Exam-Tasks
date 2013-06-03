@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\04.DateTime\bin\Debug\04.DateTime.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\04.DateTime\bin\Debug\04.DateTime.exe
+E:\Dropbox\Telerik Projects\ExamExercises\04.DateTime\bin\Debug\04.DateTime.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\04.DateTime\obj\Debug\04.DateTime.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\04.DateTime\obj\Debug\04.DateTime.exe
+E:\Dropbox\Telerik Projects\ExamExercises\04.DateTime\obj\Debug\04.DateTime.pdb

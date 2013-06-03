@@ -1,0 +1,1 @@
+E:\Dropbox\Telerik Projects\ExamExercises\09.BinaryDigitsCount\bin\Debug\09.BinaryDigitsCount.exe.config
