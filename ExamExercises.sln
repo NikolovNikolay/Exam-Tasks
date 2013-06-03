@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.MissCat", "07.MissCat\07
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.ForestRoad", "08.ForestRoad\08.ForestRoad.csproj", "{77ECB91B-C899-464D-B81A-1796A5EF5A60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.BinaryDigitsCount", "09.BinaryDigitsCount\09.BinaryDigitsCount.csproj", "{189FEC3C-FA51-45AF-9E65-CF50AB89E792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.SubsetSums", "10.SubsetSums\10.SubsetSums.csproj", "{67D416F0-26A6-43F0-A4C4-D581F20BD26C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,14 @@ Global
 		{77ECB91B-C899-464D-B81A-1796A5EF5A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77ECB91B-C899-464D-B81A-1796A5EF5A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77ECB91B-C899-464D-B81A-1796A5EF5A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{189FEC3C-FA51-45AF-9E65-CF50AB89E792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189FEC3C-FA51-45AF-9E65-CF50AB89E792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189FEC3C-FA51-45AF-9E65-CF50AB89E792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189FEC3C-FA51-45AF-9E65-CF50AB89E792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67D416F0-26A6-43F0-A4C4-D581F20BD26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67D416F0-26A6-43F0-A4C4-D581F20BD26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67D416F0-26A6-43F0-A4C4-D581F20BD26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67D416F0-26A6-43F0-A4C4-D581F20BD26C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
