@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\12.Tribonnaci\bin\Debug\12.Tribonnaci.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\12.Tribonnaci\bin\Debug\12.Tribonnaci.exe
+E:\Dropbox\Telerik Projects\ExamExercises\12.Tribonnaci\bin\Debug\12.Tribonnaci.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\12.Tribonnaci\obj\Debug\12.Tribonnaci.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\12.Tribonnaci\obj\Debug\12.Tribonnaci.exe
+E:\Dropbox\Telerik Projects\ExamExercises\12.Tribonnaci\obj\Debug\12.Tribonnaci.pdb
