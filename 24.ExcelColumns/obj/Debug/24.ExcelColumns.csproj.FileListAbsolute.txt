@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\24.ExcelColumns\bin\Debug\24.ExcelColumns.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\24.ExcelColumns\bin\Debug\24.ExcelColumns.exe
+E:\Dropbox\Telerik Projects\ExamExercises\24.ExcelColumns\bin\Debug\24.ExcelColumns.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\24.ExcelColumns\obj\Debug\24.ExcelColumns.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\24.ExcelColumns\obj\Debug\24.ExcelColumns.exe
+E:\Dropbox\Telerik Projects\ExamExercises\24.ExcelColumns\obj\Debug\24.ExcelColumns.pdb

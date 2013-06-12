@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\21.Lines\bin\Debug\21.Lines.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\21.Lines\bin\Debug\21.Lines.exe
+E:\Dropbox\Telerik Projects\ExamExercises\21.Lines\bin\Debug\21.Lines.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\21.Lines\obj\Debug\21.Lines.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\21.Lines\obj\Debug\21.Lines.exe
+E:\Dropbox\Telerik Projects\ExamExercises\21.Lines\obj\Debug\21.Lines.pdb
