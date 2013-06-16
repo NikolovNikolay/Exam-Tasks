@@ -30,42 +30,20 @@ class BitBall
         }
     }
 
-
-
-
     static void Main()
     {
         char[,] matrixOne = new char[8, 8];
         char[,] matrixTwo = new char[8, 8];
         char[,] finalMatrix = new char[8, 8];
+        char[] testArray = new char[8];
+
         int firstTeamResult = 0;
         int secondTeamResult = 0;
         int counter = 0;
 
         AssignFirstMatrixValues(matrixOne);
-        //for (int row = 0; row < 8; row++)
-        //{
-        //    string number = Convert.ToString(int.Parse(Console.ReadLine()), 2).PadLeft(8, '0');
-        //    for (int col = 0; col < 8; col++)
-        //    {
-        //        matrixOne[row, col] = number[col];
-        //    }
-        //}
-
         AssignSecondMatrixValues(matrixTwo);
-        //for (int row = 0; row < 8; row++)
-        //{
-        //    string number = Convert.ToString(int.Parse(Console.ReadLine()), 2).PadLeft(8, '0');
-        //    for (int col = 0, i = 0; col < 8; col++, i++)
-        //    {
-        //        matrixTwo[row, col] = number[col];
-        //        if (number[col] == '1')
-        //        {
-        //            matrixTwo[row, col] = '2';
-        //        }
-        //    }
-        //}
-
+        
         for (int row = 0; row < 8; row++)
         {
             for (int col = 0; col < 8; col++)
@@ -90,7 +68,6 @@ class BitBall
             }
         }
 
-        char[] testArray = new char[8];
         for (int col = 0; col < 8; col++)
         {
             counter = 0;
@@ -143,35 +120,5 @@ class BitBall
         }
         Console.WriteLine("{0}:{1}", firstTeamResult, secondTeamResult);
 
-        //// print - to be removed
-        //for (int i = 0; i < 8; i++)
-        //{
-        //    for (int j = 0; j < 8; j++)
-        //    {
-        //        Console.Write(matrixOne[i, j]);
-        //    }
-        //    Console.WriteLine();
-        //}
-
-        //Console.WriteLine();
-        //for (int i = 0; i < 8; i++)
-        //{
-        //    for (int j = 0; j < 8; j++)
-        //    {
-        //        Console.Write(matrixTwo[i, j]);
-        //    }
-        //    Console.WriteLine();
-        //}
-        //Console.WriteLine();
-        //for (int i = 0; i < 8; i++)
-        //{
-        //    for (int j = 0; j < 8; j++)
-        //    {
-        //        Console.Write(finalMatrix[i, j]);
-        //    }
-        //    Console.WriteLine();
-        //}
-        
-        //Console.WriteLine(secondTeamResult);
     }
 }

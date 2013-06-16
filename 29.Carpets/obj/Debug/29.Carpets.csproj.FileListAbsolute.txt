@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\29.Carpets\bin\Debug\29.Carpets.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\29.Carpets\bin\Debug\29.Carpets.exe
+E:\Dropbox\Telerik Projects\ExamExercises\29.Carpets\bin\Debug\29.Carpets.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\29.Carpets\obj\Debug\29.Carpets.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\29.Carpets\obj\Debug\29.Carpets.exe
+E:\Dropbox\Telerik Projects\ExamExercises\29.Carpets\obj\Debug\29.Carpets.pdb

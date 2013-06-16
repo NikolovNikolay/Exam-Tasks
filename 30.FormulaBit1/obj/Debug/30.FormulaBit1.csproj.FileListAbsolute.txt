@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\30.FormulaBit1\bin\Debug\30.FormulaBit1.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\30.FormulaBit1\bin\Debug\30.FormulaBit1.exe
+E:\Dropbox\Telerik Projects\ExamExercises\30.FormulaBit1\bin\Debug\30.FormulaBit1.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\30.FormulaBit1\obj\Debug\30.FormulaBit1.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\30.FormulaBit1\obj\Debug\30.FormulaBit1.exe
+E:\Dropbox\Telerik Projects\ExamExercises\30.FormulaBit1\obj\Debug\30.FormulaBit1.pdb
