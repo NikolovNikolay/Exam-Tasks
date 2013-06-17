@@ -3,3 +3,4 @@ E:\Dropbox\Telerik Projects\ExamExercises\31.Pillars\bin\Debug\31.Pillars.exe
 E:\Dropbox\Telerik Projects\ExamExercises\31.Pillars\bin\Debug\31.Pillars.pdb
 E:\Dropbox\Telerik Projects\ExamExercises\31.Pillars\obj\Debug\31.Pillars.exe
 E:\Dropbox\Telerik Projects\ExamExercises\31.Pillars\obj\Debug\31.Pillars.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\31.Pillars\obj\Debug\31.Pillars.csprojResolveAssemblyReference.cache

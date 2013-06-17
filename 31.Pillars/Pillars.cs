@@ -15,7 +15,7 @@ class Pillars
             }
         }
 
-        int pillar = 1;
+        int pillar = 7;
         int countLeft = 0;
         int countRight = 0;
 
@@ -32,7 +32,8 @@ class Pillars
 
         int[] testArray = new int[8];
 
-        while (pillar < 7)
+        int countSolutions = 0;
+        while (pillar >=0)
         {
             countRight = 0;
             countLeft = 0;
@@ -47,23 +48,37 @@ class Pillars
                 }
             }
 
-            for (int col = pillar + 1; col < 8; col++)
-            {
-                for (int row = 0; row < 8; row++)
+            //if (pillar + 1 < 7)
+            //{
+                for (int col = pillar + 1; col < 8; col++)
                 {
-                    if (matrix[row, col] == 1)
+                    for (int row = 0; row < 8; row++)
                     {
-                        countRight++;
+                        if (matrix[row, col] == 1)
+                        {
+                            countRight++;
+                        }
                     }
                 }
-            }
+            //}
             if (countRight == countLeft)
             {
+                // countSolutions++;
                 solutionAvailable = true;
+                //if (countSolutions > 1)
+                //{
+                //    break;
+                //}
                 break;
             }
-            pillar++;
+            pillar--;
 
+        }
+
+        if (countSolutions == 1)
+        {
+            Console.WriteLine();
+            Console.WriteLine();
         }
         if (solutionAvailable)
         {

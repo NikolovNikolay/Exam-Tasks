@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise", "exercise\exerci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31.Pillars", "31.Pillars\31.Pillars.csproj", "{D85E5388-A1DA-4B4F-BFB7-E9B626947E45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32.AngryBits", "32.AngryBits\32.AngryBits.csproj", "{2EC1F256-1C15-409C-9F7C-B75495C91C15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -199,6 +201,10 @@ Global
 		{D85E5388-A1DA-4B4F-BFB7-E9B626947E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D85E5388-A1DA-4B4F-BFB7-E9B626947E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D85E5388-A1DA-4B4F-BFB7-E9B626947E45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC1F256-1C15-409C-9F7C-B75495C91C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC1F256-1C15-409C-9F7C-B75495C91C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC1F256-1C15-409C-9F7C-B75495C91C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC1F256-1C15-409C-9F7C-B75495C91C15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
