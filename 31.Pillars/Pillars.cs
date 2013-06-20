@@ -48,8 +48,6 @@ class Pillars
                 }
             }
 
-            //if (pillar + 1 < 7)
-            //{
                 for (int col = pillar + 1; col < 8; col++)
                 {
                     for (int row = 0; row < 8; row++)
@@ -60,26 +58,18 @@ class Pillars
                         }
                     }
                 }
-            //}
+            
             if (countRight == countLeft)
             {
-                // countSolutions++;
+                
                 solutionAvailable = true;
-                //if (countSolutions > 1)
-                //{
-                //    break;
-                //}
+                
                 break;
             }
             pillar--;
 
         }
 
-        if (countSolutions == 1)
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-        }
         if (solutionAvailable)
         {
 

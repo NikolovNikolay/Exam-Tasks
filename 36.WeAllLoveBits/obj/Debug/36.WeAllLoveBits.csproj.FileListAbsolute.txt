@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\36.WeAllLoveBits\bin\Debug\36.WeAllLoveBits.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\36.WeAllLoveBits\bin\Debug\36.WeAllLoveBits.exe
+E:\Dropbox\Telerik Projects\ExamExercises\36.WeAllLoveBits\bin\Debug\36.WeAllLoveBits.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\36.WeAllLoveBits\obj\Debug\36.WeAllLoveBits.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\36.WeAllLoveBits\obj\Debug\36.WeAllLoveBits.exe
+E:\Dropbox\Telerik Projects\ExamExercises\36.WeAllLoveBits\obj\Debug\36.WeAllLoveBits.pdb

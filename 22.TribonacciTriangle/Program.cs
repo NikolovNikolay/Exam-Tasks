@@ -39,6 +39,47 @@ namespace Exam._1.Tribonacci_Triangle
                 }
                 Console.WriteLine();
             }
+
+
+            /*
+             
+            long firstNumber = long.Parse(Console.ReadLine());
+            long secondNumber = long.Parse(Console.ReadLine());
+            long thirdNumber = long.Parse(Console.ReadLine());
+            long lines = long.Parse(Console.ReadLine());
+
+            long result;
+            int elementsOnLine = 3;
+
+            for (int i = 0; i < 1; i++)
+            {
+                Console.WriteLine(firstNumber);
+                Console.WriteLine(secondNumber+ " " + thirdNumber);
+            }
+
+            for (int row = 3; row <= lines; row++)
+            {
+                for (int col = 0; col < elementsOnLine; col++)
+                {
+                    result = firstNumber + secondNumber + thirdNumber;
+                    if (col == elementsOnLine)
+                    {
+                        Console.Write("{0}", result);
+                    }
+                    else
+                    {
+                        Console.Write("{0} ",result);
+                    }
+                
+                    firstNumber = secondNumber;
+                    secondNumber = thirdNumber;
+                    thirdNumber = result;
+                }
+                Console.WriteLine();
+                elementsOnLine++;
+            }
+             */
+
         }
     }
 }

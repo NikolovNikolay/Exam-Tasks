@@ -4,80 +4,84 @@ class TelerikLogo
 {
     static void Main()
     {
-        int numberX = int.Parse(Console.ReadLine());
+        int X = int.Parse(Console.ReadLine());
+        int Y = X;
+        int Z = (X / 2) + 1;
 
-        int numberY = numberX;
-        int numberZ = (numberX / 2) + 1;
 
-        char[,] matrix = new char[(numberX + (numberX - 1) + ((2 * numberZ) - 2)),(numberX + (numberX - 1) + ((2 * numberZ) - 2))];
+        int lines = X + (X - 1) + ((X / 2) * 2);
+        char[,] matrix = new char[lines, lines];
 
-        for (int i = 0; i < matrix.GetLength(0); i++)
+        for (int i = 0; i < lines; i++)
         {
-            for (int j = 0; j < matrix.GetLength(1); j++)
+            for (int j = 0; j < lines; j++)
             {
                 matrix[i, j] = '.';
             }
         }
 
-        int startRow = numberX / 2;
-        int startCol = 0;
+        int row = X / 2;
+        int col = 0;
+        // starting from left horn. Every loop is a straight line
 
-        for (int i = 0; i < numberZ; i++)
+        for (int i = 0; i < Z; i++)
         {
-            matrix[startRow, startCol] = '*';
-            startRow--;
-            startCol++;
+            matrix[row, col] = '*';
+            row--;
+            col++;
         }
 
-        startRow += 2;
+        row += 2;
 
-        for (int i = 1; startCol < matrix.GetLength(1) - numberX/2; i++)
+        for (int i = 1; i <= lines - X; i++)
         {
-            matrix[startRow, startCol] = '*';
-            startCol++;
-            startRow++;
+            matrix[row, col] = '*';
+            row++;
+            col++;
+
         }
 
-        startCol -= 2;
+        col -= 2;
 
-        for (int i = 0; i < numberX - 1; i++)
+        for (int i = 0; i < X - 1; i++)
         {
-            matrix[startRow, startCol] = '*';
-            startCol--;
-            startRow++;
+            matrix[row, col] = '*';
+            row++;
+            col--;
         }
 
-        startRow -= 2;
+        row -= 2;
 
-        for (int i = 0; i < numberX - 1; i++)
+        for (int i = 0; i < X - 1; i++)
         {
-            matrix[startRow, startCol] = '*';
-            startCol--;
-            startRow--;
+            matrix[row, col] = '*';
+            row--;
+            col--;
         }
 
-        startCol += 2;
-        for (int i = 0; startRow >= 0; i++)
+        col += 2;
+
+        for (int i = 0; i < lines - X; i++)
         {
-            matrix[startRow, startCol] = '*';
-            startCol++;
-            startRow--;
+            matrix[row, col] = '*';
+            col++;
+            row--;
         }
 
-        startRow += 2;
+        row += 2;
 
-        for (int i = 0; i < numberX /2; i++)
+        for (int i = 0; i < Z - 1; i++)
         {
-            matrix[startRow, startCol] = '*';
-            startCol++;
-            startRow++;
+            matrix[row, col] = '*';
+            col++;
+            row++;
         }
 
-        for (int row = 0; row < matrix.GetLength(0); row++)
+        for (int i = 0; i < lines; i++)
         {
-            for (int col = 0; col < matrix.GetLength(1); col++)
+            for (int j = 0; j < lines; j++)
             {
-                Console.Write(matrix[row, col]);
+                Console.Write(matrix[i, j]);
             }
             Console.WriteLine();
         }
