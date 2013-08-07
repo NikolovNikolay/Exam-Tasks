@@ -1,0 +1,7 @@
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\9GaGNumbers\bin\Debug\9GaGNumbers.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\9GaGNumbers\bin\Debug\9GaGNumbers.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\9GaGNumbers\bin\Debug\9GaGNumbers.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\9GaGNumbers\obj\Debug\9GaGNumbers.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\9GaGNumbers\obj\Debug\9GaGNumbers.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\9GaGNumbers\obj\Debug\9GaGNumbers.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\GenomeDecoder\bin\Debug\9GaGNumbers.exe.config
