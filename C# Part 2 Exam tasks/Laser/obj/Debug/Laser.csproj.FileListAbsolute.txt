@@ -1,0 +1,5 @@
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Laser\bin\Debug\Laser.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Laser\bin\Debug\Laser.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Laser\bin\Debug\Laser.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Laser\obj\Debug\Laser.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Laser\obj\Debug\Laser.pdb
