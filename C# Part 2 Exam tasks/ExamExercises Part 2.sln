@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise", "exercise\exerci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laser", "Laser\Laser.csproj", "{492C90D3-54F6-44F3-8490-DD0CACB0435E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KukataIsDancing", "KukataIsDancing\KukataIsDancing.csproj", "{ADDFA680-F9F9-4707-94F7-0949FA01934B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBrackets", "CSharpBrackets\CSharpBrackets.csproj", "{C6C17F86-AEED-4FC9-895D-0BD974BE3E4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,14 @@ Global
 		{492C90D3-54F6-44F3-8490-DD0CACB0435E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{492C90D3-54F6-44F3-8490-DD0CACB0435E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{492C90D3-54F6-44F3-8490-DD0CACB0435E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADDFA680-F9F9-4707-94F7-0949FA01934B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADDFA680-F9F9-4707-94F7-0949FA01934B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADDFA680-F9F9-4707-94F7-0949FA01934B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADDFA680-F9F9-4707-94F7-0949FA01934B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C17F86-AEED-4FC9-895D-0BD974BE3E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C17F86-AEED-4FC9-895D-0BD974BE3E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C17F86-AEED-4FC9-895D-0BD974BE3E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C17F86-AEED-4FC9-895D-0BD974BE3E4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
