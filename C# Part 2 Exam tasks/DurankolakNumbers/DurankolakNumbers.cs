@@ -1,59 +1,92 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Numerics;
-// един символ включва голяма буква, напр. символи са U, mB, B aG ...
-// малките букви се приравняват към големите - смята се тяхната int стойност, първо на малките, после на големите и се събира, като се 
-// прибавя към списък с елементи ( съдържа сбора на малките и големите числа, като всеки сбор е един елемент, на който по-късно
-// трябва да се изчисли степен. За да се изчисли степента е препоръчително да се обърне Reverse() листът.
+using System.Text;
 
-
-class DurankulakNumbers
+class DurankolakNumbers
 {
+    static string[] durankolakNumbers = new string[168];
+
     static void Main()
     {
-        string text = Console.ReadLine();
+        AssignDurankulakNumbers();
+        string input = Console.ReadLine();
 
-        int capitalSum = 0;
-        int lowerSum = 0;
-        List<int> elements = new List<int>();
+        var durankulakDigits = GetDurankulakNumbers(input);
+        durankulakDigits.Reverse();
 
-        for (int i = 0; i < text.Length; i++)
-        {
-            if (text[i] >= 'a' && text[i] <= 'a')
-            {
-                lowerSum = (text[i] - ('a' - 1)) * 26;
-            }
-
-            else if (text[i] >= 'A' && text[i] <= 'Z')
-            {
-                capitalSum = text[i] - 'A' + lowerSum;
-                elements.Add(capitalSum);
-                lowerSum = 0;
-                capitalSum = 0;
-            }
-        }
-
-        //elements.Reverse();
-        BigInteger result = 0;
-        int pow = 0;
-        for (int i = elements.Count - 1; i >= 0; i--)
-        {
-            result += elements[i] * CalcPow(pow);
-            pow++;
-        }
-
+        long result = CalculateResult(durankulakDigits);
         Console.WriteLine(result);
+
+        
     }
 
-    static BigInteger CalcPow(int index)
+    static long CalculateResult(List<string> list)
     {
-        BigInteger pow = 1;
-        for (int i = 0; i < index; index--)
+        long result = 0;
+        for (int i = 0; i < list.Count; i++)
         {
-            pow *= 168;
+            result += Array.IndexOf(durankolakNumbers,list[i]) * (long)Math.Pow(168, i);
         }
 
-        return pow;
+        return result;
     }
-   
+
+    static List<string> GetDurankulakNumbers(string input)
+    {
+        List<string> digits = new List<string>();
+        var digit = new StringBuilder();
+        for (int i = 0; i < input.Length; i++)
+        {
+            char ch = input[i];
+
+            if (char.IsLower(ch))
+            {
+                digit.Append(ch);
+            }
+            else
+            {
+                digit.Append(ch);
+                digits.Add(digit.ToString());
+                digit.Clear();
+            }
+        }
+
+        return digits;
+    }
+
+    static void AssignDurankulakNumbers()
+    {
+        for (int i = 0; i < 168; i++)
+        {
+            if (i < 26)
+            {
+                durankolakNumbers[i] = ((char)('A' + i)).ToString();
+            }
+            else if (i < 2 * 26)
+            {
+                durankolakNumbers[i] = "a" + durankolakNumbers[i - 26];
+            }
+            else if (i < 3 * 26)
+            {
+                durankolakNumbers[i] = "b" + durankolakNumbers[i - 2*26];
+            }
+            else if (i < 4 * 26)
+            {
+                durankolakNumbers[i] = "c" + durankolakNumbers[i - 3 * 26];
+            }
+            else if (i < 5 * 26)
+            {
+                durankolakNumbers[i] = "d" + durankolakNumbers[i - 4 * 26];
+            }
+            else if (i < 6 * 26)
+            {
+                durankolakNumbers[i] = "e" + durankolakNumbers[i - 5 * 26];
+            }
+            else 
+            {
+                durankolakNumbers[i] = "f" + durankolakNumbers[i - 6 * 26];
+            }
+        }
+    }
 }

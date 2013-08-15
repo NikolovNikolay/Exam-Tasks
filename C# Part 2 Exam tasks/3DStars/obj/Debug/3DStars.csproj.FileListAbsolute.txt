@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\3DStars\bin\Debug\3DStars.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\3DStars\bin\Debug\3DStars.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\3DStars\bin\Debug\3DStars.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\3DStars\obj\Debug\3DStars.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\3DStars\obj\Debug\3DStars.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\3DStars\obj\Debug\3DStars.csprojResolveAssemblyReference.cache
