@@ -8,48 +8,49 @@ class Tubes
 {
     static void Main()
     {
-        int tubes = int.Parse(Console.ReadLine());
-        long friends = long.Parse(Console.ReadLine());
+        int n = int.Parse(Console.ReadLine());  // tubes 
+        int m = int.Parse(Console.ReadLine());  // friends
 
-        long[] tubesLength = new long[tubes];
-        long maxtube = -1;
-        long mintube = long.MaxValue;
-        for (int i = 0; i < tubes; i++)
+        int[] tubes = new int[n];
+        int biggestTube = int.MinValue;
+
+        for (int i = 0; i < n; i++)
         {
-            tubesLength[i] = long.Parse(Console.ReadLine());
-            if (maxtube < tubesLength[i])
+            tubes[i] = int.Parse(Console.ReadLine());
+            if (tubes[i] > biggestTube)
             {
-                maxtube = tubesLength[i];
+                biggestTube = tubes[i];
             }
-            
         }
 
-        long left = 1;
-        long right = maxtube;
-        long middle = (right - left) / 2;
-        long result = -1;
+        int left = 0;
+        int right = biggestTube;
+        int middle = (left + right) / 2;
+        int maxTube = -1;
 
         while (left <= right)
         {
-            long currentTube = 0;
+            int cutTubes = 0;
 
-            for (int i = 0; i < tubesLength.Length; i++)
+            for (int i = 0; i < n; i++)
             {
-                currentTube += tubesLength[i] / middle;
+                cutTubes += tubes[i] / middle;
             }
 
-            if (currentTube < friends)
+            if (cutTubes >= m)
+            {
+                left = middle + 1;
+                maxTube = middle;
+
+            }
+            else
             {
                 right = middle - 1;
             }
-            else if (currentTube >= friends)
-            {
-                left = middle + 1;
-                result = middle;
-            }
 
-            middle = (right + left) / 2;
+            middle = (left + right) / 2;
         }
-        Console.WriteLine(result);
+
+        Console.WriteLine(maxTube);
     }
 }

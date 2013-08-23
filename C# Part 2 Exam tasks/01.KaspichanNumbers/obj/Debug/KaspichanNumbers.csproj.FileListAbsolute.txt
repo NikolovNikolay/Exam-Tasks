@@ -1,3 +1,6 @@
 E:\Dropbox\Telerik Projects\ExamExercises Part 2\01.KaspichanNumbers\bin\Debug\01.KaspichanNumbers.exe.config
 E:\Dropbox\Telerik Projects\ExamExercises Part 2\01.KaspichanNumbers\obj\Debug\01.KaspichanNumbers.exe
 E:\Dropbox\Telerik Projects\ExamExercises Part 2\01.KaspichanNumbers\obj\Debug\01.KaspichanNumbers.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\01.KaspichanNumbers\bin\Debug\01.KaspichanNumbers.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\01.KaspichanNumbers\bin\Debug\01.KaspichanNumbers.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\01.KaspichanNumbers\obj\Debug\KaspichanNumbers.csprojResolveAssemblyReference.cache
