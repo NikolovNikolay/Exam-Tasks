@@ -10,10 +10,10 @@ class CSharpBrackets
     static void Main()
     {
         //DateTime now = DateTime.Now;
-        if (File.Exists("input.txt"))
-        {
-            Console.SetIn(new StreamReader("input.txt"));
-        }
+        //if (File.Exists("input.txt"))
+        //{
+        //    Console.SetIn(new StreamReader("input.txt"));
+        //}
 
         int numberOfLines = int.Parse(Console.ReadLine());
         string inlineString = Console.ReadLine();
@@ -88,13 +88,27 @@ class CSharpBrackets
                     }
                     else if (ch == ';' && j == line.Length - 1)
                     {
+                        //    //if (builder.Length == 0)
+                        //    //{
+                        //    //    builder.Append(ch);
+                        //    //    for (int k = 0; k < brackets; k++)
+                        //    //    {
+                        //    //        builder.Insert(0, inlineString);
+                        //    //    }
+                        //    //    Console.WriteLine(builder.ToString().Trim());
+                        //    //    builder.Clear();
+                        //    //}
+                        //    if (line[j] == line[line.Length - 1])
+                        //    {
                         builder.Append(ch);
                         for (int k = 0; k < brackets; k++)
                         {
                             builder.Insert(0, inlineString);
                         }
                         Console.WriteLine(builder.ToString().Trim());
+                        //brackets++;
                         builder.Clear();
+                        //    }
                     }
                     else
                     {
@@ -109,7 +123,7 @@ class CSharpBrackets
                     }
                 }
             }
-           
+
         }
         //TimeSpan span = DateTime.Now - now;
     }

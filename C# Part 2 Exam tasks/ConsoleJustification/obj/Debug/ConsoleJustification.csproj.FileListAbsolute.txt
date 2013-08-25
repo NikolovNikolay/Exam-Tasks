@@ -1,0 +1,5 @@
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\ConsoleJustification\bin\Debug\ConsoleJustification.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\ConsoleJustification\bin\Debug\ConsoleJustification.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\ConsoleJustification\bin\Debug\ConsoleJustification.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\ConsoleJustification\obj\Debug\ConsoleJustification.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\ConsoleJustification\obj\Debug\ConsoleJustification.pdb

@@ -1,0 +1,5 @@
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Neurons\bin\Debug\Neurons.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Neurons\bin\Debug\Neurons.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Neurons\bin\Debug\Neurons.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Neurons\obj\Debug\Neurons.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Neurons\obj\Debug\Neurons.pdb
