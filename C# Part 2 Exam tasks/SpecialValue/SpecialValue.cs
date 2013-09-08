@@ -1,81 +1,67 @@
 ﻿using System;
 
+// 100 / 100
 class SpecialValue
 {
     static void Main()
     {
-        int N = int.Parse(Console.ReadLine());
+        //Console.SetIn(new StreamReader("input.txt"));
+        int lines = int.Parse(Console.ReadLine());
+        int[][] board = new int[lines][];
+        bool[][] visited = new bool[lines][];
 
-        int[][] field = new int[N][];
-        ProcessField(field);
-
-        bool[][] used = new bool[N][];
-
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < lines; i++)
         {
-            used[i] = new bool[field[i].Length];
+            board[i] = Console.ReadLine().Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries).Select(s => int.Parse(s)).ToArray();
+            visited[i] = new bool[board[i].Length];
         }
 
-        long max = long.MinValue;
+        int maxLenght = 0;
 
-        for (int i = 0; i < field[0].Length; i++)
+        for (int i = 0; i < board[0].Length; i++)
         {
-            long specialValue = GetSpecialValue(field, i, used);
-            if (max < specialValue)
+            int length = GetMaxLength(board, visited, i, lines);
+            if (length > maxLenght)
             {
-                max = specialValue;
+                maxLenght = length;
             }
         }
 
-        Console.WriteLine(max);
+        Console.WriteLine(maxLenght);
     }
 
-    static long GetSpecialValue(int[][] field, int col, bool[][] used)
+    private static int GetMaxLength(int[][] board, bool[][] visited, int i, int lines)
     {
-        long result = 0;
-        int row = 0;
+        int length = 0;
+        int row = -1;
+        int col = i;
 
         while (true)
         {
-            result++;
-            if (used[row][col])
+
+            int next = board[row + 1][col];
+
+            if (next < 0)
             {
-                return long.MinValue;
+                visited[row + 1][col] = true;
+                length++;
+                return length + (-next);
             }
-            if (field[row][col] < 0)
+            else if (visited[row + 1][col])
             {
-                result -= field[row][col];
-                return result;
+                return length;
             }
-
-            int nextCol = field[row][col];
-            used[row][col] = true;
-            col = nextCol;
-
-            row++;
-
-            if (row == field.GetLength(0))
+            else
             {
-                row = 0;
-            }
-        }
+                col = next;
+                row++;
+                length++;
 
-
-    }
-
-    static int[][] ProcessField(int[][] field)
-    {
-        for (int i = 0; i < field.GetLength(0); i++)
-        {
-            string[] elements = Console.ReadLine().Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-            field[i] = new int[elements.Length];
-            for (int j = 0; j < elements.Length; j++)
-            {
-                field[i][j] = int.Parse(elements[j]);
+                if (row >= lines - 1)
+                {
+                    row = -1;
+                }
             }
         }
-
-        return field;
     }
 }

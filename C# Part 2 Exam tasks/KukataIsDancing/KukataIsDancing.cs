@@ -3,113 +3,88 @@ using System.Linq;
 
 class KukataIsDancing
 {
-    public static int[,] cube = new int[3, 3];
-
     static void Main()
     {
-        cube[0, 0] = cube[0, 2] = cube[2, 0] = cube[2, 2] = 1; // 1 for red
-        cube[1, 1] = 2; // 2 for green
-        
-        int dances = int.Parse(Console.ReadLine());
-        int row = 1;
-        int col = 1;
-        int direction = 0; // 0 down, 1 right, 2 up, 3 left
+        int lines = int.Parse(Console.ReadLine());
+        string[,] danceFloor = new string[3, 3];
+        danceFloor[0, 0] = danceFloor[0, 2] = danceFloor[2, 0] = danceFloor[2, 2] = "RED";
+        danceFloor[0, 1] = danceFloor[1, 0] = danceFloor[1, 2] = danceFloor[2, 1] = "BLUE";
+        danceFloor[1, 1] = "GREEN";
 
-        for (int dance = 0; dance < dances; dance++)
+        for (int i = 0; i < lines; i++)
         {
-            row = 1;
-            col = 1;
-            direction = 0;
             string current = Console.ReadLine();
-            for (int ch = 0; ch < current.Length; ch++)
+            int direction = 0;
+            int row = 1;
+            int col = 1;
+            for (int j = 0; j < current.Length; j++)
             {
-                char move = current[ch];
-                if (move == 'L')
+                char ch = current[j];
+
+                if (ch == 'L')
                 {
                     direction++;
-                    if (direction > 3)
-                    {
-                        direction = 0;
-                    }
+                    direction = DetermineDirection(direction);
                 }
-                else if (move == 'R')
+                else if (ch == 'R')
                 {
                     direction--;
-                    if (direction < 0)
-                    {
-                        direction = 3;
-                    }
+                    direction = DetermineDirection(direction);
                 }
-                else
+                else if (ch == 'W')
                 {
                     if (direction == 0)
                     {
-                        row = row + 1;
-                        row = CheckBoundariesRow(row);
+                        row--;
                     }
                     else if (direction == 1)
                     {
-                        col = col + 1;
-                        col = CheckBoundariesCol(col);
+                        col--;
                     }
                     else if (direction == 2)
                     {
-                        row = row - 1;
-                        row = CheckBoundariesRow(row);
+                        row++;
                     }
                     else if (direction == 3)
                     {
-                        col = col - 1;
-                        col = CheckBoundariesCol(col);
+                        col++;
                     }
+
+                    if (col == -1)
+                        col = 2;
+                    else if (col == 3)
+                        col = 0;
+
+                    if (row == -1)
+                        row = 2;
+                    else if (row == 3)
+                        row = 0;
                 }
-
             }
-            if (cube[row, col] == 1)
-            {
-                Console.WriteLine("RED");
-            }
-            else if (cube[row, col] == 2)
-            {
-                Console.WriteLine("GREEN");
-            }
-            else
-            {
-                Console.WriteLine("BLUE");
-            }
+            Console.WriteLine(danceFloor[row, col]);
         }
     }
 
-    static int CheckBoundariesRow(int row)
+    private static int DetermineDirection(int direction)
     {
-        
-        if (row == -1)
+        if (direction == 4)
         {
-            row = 2;
-            return row;
+            direction = 0;
         }
-        else if (row == 3)
+        else if (direction == -1)
         {
-            row = 0;
-            return row;
+            direction = 3;
         }
-        
-        return row;
-    }
+        else if (direction == -2)
+        {
+            direction = 2;
+        }
+        else if (direction == -3)
+        {
+            direction = 2;
+        }
 
-    static int CheckBoundariesCol(int col)
-    {
-        if (col == -1)
-        {
-            col = 2;
-            return col;
-        }
-        else if (col == 3)
-        {
-            col = 0;
-            return col;
-        }
-        return col;
+        return direction;
     }
 }
         
