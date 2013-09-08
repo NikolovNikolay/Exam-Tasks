@@ -9,122 +9,95 @@ class CSharpBrackets
 {
     static void Main()
     {
-        //DateTime now = DateTime.Now;
-        //if (File.Exists("input.txt"))
-        //{
-        //    Console.SetIn(new StreamReader("input.txt"));
-        //}
-
-        int numberOfLines = int.Parse(Console.ReadLine());
-        string inlineString = Console.ReadLine();
-        var builder = new StringBuilder();
+        //Console.SetIn(new StreamReader("input.txt"));
+        int lines = int.Parse(Console.ReadLine());
+        string tab = Console.ReadLine();
         int brackets = 0;
-        for (int i = 0; i < numberOfLines; i++)
+        var sb = new StringBuilder();
+
+        for (int line = 0; line < lines; line++)
         {
-            string line = Console.ReadLine().Trim();
-            if (line == string.Empty)
+            string currentLine = Console.ReadLine().Trim();
+            if (currentLine == string.Empty)
             {
                 continue;
             }
-            if (line.IndexOf('{') == -1 && line.IndexOf('}') == -1)
+            else if (currentLine.IndexOf('{') < 0 && currentLine.IndexOf('}') < 0)
             {
-                string[] words = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                for (int j = 0; j < words.Length; j++)
+                string[] words = currentLine.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                for (int i = 0; i < words.Length; i++)
                 {
-                    builder.AppendFormat("{0} ", words[j]);
-
+                    sb.Append(words[i] + " ");
                 }
-                for (int j = 0; j < brackets; j++)
-                {
-                    builder.Insert(0, inlineString);
-                }
-                Console.WriteLine(builder.ToString().Trim());
-                builder.Clear();
+                AppendTabs(brackets, sb, tab);
+                Console.WriteLine(sb.ToString().Trim());
+                sb.Clear();
             }
             else
             {
-                for (int j = 0; j < line.Length; j++)
+                for (int i = 0; i < currentLine.Length; i++)
                 {
-                    char ch = line[j];
+                    char ch = currentLine[i];
                     if (ch == '{')
                     {
-                        if (builder.Length > 0)
+                        if (sb.Length > 0)
                         {
-                            for (int k = 0; k < brackets; k++)
-                            {
-                                builder.Insert(0, inlineString);
-                            }
-                            Console.WriteLine(builder.ToString().Trim());
-                            builder.Clear();
+                            AppendTabs(brackets, sb, tab);
+                            Console.WriteLine(sb.ToString().Trim());
+                            sb.Clear();
                         }
-                        builder.Append(ch);
-                        for (int k = 0; k < brackets; k++)
-                        {
-                            builder.Insert(0, inlineString);
-                        }
-                        Console.WriteLine(builder.ToString().Trim());
+                        sb.Append(ch);
+                        AppendTabs(brackets, sb, tab);
+                        Console.WriteLine(sb);
                         brackets++;
-                        builder.Clear();
+                        sb.Clear();
                     }
                     else if (ch == '}')
                     {
-                        if (builder.Length > 0)
+                        if (sb.Length > 0)
                         {
-                            for (int k = 0; k < brackets; k++)
-                            {
-                                builder.Insert(0, inlineString);
-                            }
-                            Console.WriteLine(builder.ToString().Trim());
-                            builder.Clear();
+                            AppendTabs(brackets, sb, tab);
+                            Console.WriteLine(sb.ToString().Trim());
+                            sb.Clear();
                         }
-                        builder.Append(ch);
+                        sb.Append(ch);
                         brackets--;
-                        for (int k = 0; k < brackets; k++)
-                        {
-                            builder.Insert(0, inlineString);
-                        }
-                        Console.WriteLine(builder.ToString().Trim());
-                        builder.Clear();
+                        AppendTabs(brackets, sb, tab);
+                        Console.WriteLine(sb);
+                        sb.Clear();
                     }
-                    else if (ch == ';' && j == line.Length - 1)
+                    else if (ch == ';' && i == currentLine.Length - 1)
                     {
-                        //    //if (builder.Length == 0)
-                        //    //{
-                        //    //    builder.Append(ch);
-                        //    //    for (int k = 0; k < brackets; k++)
-                        //    //    {
-                        //    //        builder.Insert(0, inlineString);
-                        //    //    }
-                        //    //    Console.WriteLine(builder.ToString().Trim());
-                        //    //    builder.Clear();
-                        //    //}
-                        //    if (line[j] == line[line.Length - 1])
-                        //    {
-                        builder.Append(ch);
+                        sb.Append(ch);
                         for (int k = 0; k < brackets; k++)
                         {
-                            builder.Insert(0, inlineString);
+                            sb.Insert(0, tab);
                         }
-                        Console.WriteLine(builder.ToString().Trim());
-                        //brackets++;
-                        builder.Clear();
-                        //    }
+                        Console.WriteLine(sb.ToString().Trim());
+                        sb.Clear();
                     }
                     else
                     {
-                        if (ch == ' ' && builder.Length > 0 && builder[builder.Length - 1] != ' ')
+                        if (ch == ' ' && sb.Length > 0 && sb[sb.Length - 1] != ' ')
                         {
-                            builder.Append(ch);
+                            sb.Append(ch);
                         }
                         else if (ch != ' ')
                         {
-                            builder.Append(ch);
+                            sb.Append(ch);
                         }
+
                     }
                 }
             }
-
         }
-        //TimeSpan span = DateTime.Now - now;
+    }
+
+    static void AppendTabs(int brackets, StringBuilder sb, string tab)
+    {
+        for (int i = 0; i < brackets; i++)
+        {
+            sb.Insert(0, tab);
+        }
     }
 }

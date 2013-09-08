@@ -4,9 +4,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Globalization;
+using System.Collections;
 
 class Program
 {
+    
     static string[, ,] cuboid;
     static string[] directions = { "L", "R", "F", "B", "FL", "FR", "BL", "BR" };
     static int[] dirsW = { -1, 1, 0, 0, -1, 1, -1, 1 };
@@ -15,6 +20,7 @@ class Program
 
     static void Main()
     {
+        Console.SetIn(new StreamReader("input.txt"));
         string[] dimentions = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
         int W = int.Parse(dimentions[0]);
         int H = int.Parse(dimentions[1]);

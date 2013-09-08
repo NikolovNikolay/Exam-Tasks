@@ -5,90 +5,107 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// 100/ 100
 class Program
 {
     static void Main()
     {
-        int N = int.Parse(Console.ReadLine());
-        int M = int.Parse(Console.ReadLine());
+       //Console.SetIn(new StreamReader("input.txt"));
+        int lines = int.Parse(Console.ReadLine());
+        int tokens = int.Parse(Console.ReadLine());
+        var builder = new StringBuilder();
 
-        StringBuilder builder = new StringBuilder();
+        List<string> allWords = new List<string>();
 
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < lines; i++)
         {
-            string[] lineWords = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] line = Console.ReadLine().Trim().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            for (int j = 0; j < lineWords.Length; j++)
-            {
-                builder.AppendFormat(lineWords[j] + " ");
-            }
+            for (int j = 0; j < line.Length; j++)
+			{
+                allWords.Add(line[j]);
+			}
         }
 
-        List<string> allWords = builder.ToString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-
-        builder.Clear();
-        int indexOfWhitespace = -1;
-        while (true)
+        int last = 0;
+        for (int j = 0; j < allWords.Count; j++)
         {
-            int wordIndex = 0;
-            if (allWords.Count != 0 && builder.Length + allWords[wordIndex].Length < M)
+            if (builder.Length + allWords[j].Length <= tokens)
             {
-                builder.AppendFormat(allWords[wordIndex] + " ");
-                //if (allWords.Count == 1)
-                //{
-                //    Console.WriteLine(builder.ToString().Trim());
-                //}
-                allWords.Remove(allWords[wordIndex]);
-
-
-            }
-            else if (allWords.Count != 0 && builder.Length + allWords[wordIndex].Length == M)
-            {
-                builder.AppendFormat(allWords[wordIndex]);
-                allWords.Remove(allWords[wordIndex]);
-                Console.WriteLine(builder.ToString());
-                builder.Clear();
-                indexOfWhitespace = 0;
+                builder.Append(allWords[j] + " ");
+                last = j;
             }
             else
             {
-                string str = builder.ToString().Trim();
-
-                for (int i = 0; i < M - str.Length; i++)
-                {
-                    if (indexOfWhitespace < builder.ToString().Trim().Length)
-                    {
-                        indexOfWhitespace = builder.ToString().Trim().IndexOf(' ', indexOfWhitespace + 1);
-                    }
-
-                    if (indexOfWhitespace == -1)
-                    {
-                        indexOfWhitespace = builder.ToString().Trim().IndexOf(' ', indexOfWhitespace + 1);
-                        //builder.Insert(indexOfWhitespace + 1, ' ');
-
-                    }
-
-                    if (indexOfWhitespace < builder.ToString().Trim().Length)
-                    {
-                        builder.Insert(indexOfWhitespace + 1, ' ');
-                    }
-                    indexOfWhitespace++;
-
-                    while (indexOfWhitespace < builder.ToString().Length && builder.ToString()[indexOfWhitespace] == ' ')
-                    {
-                        indexOfWhitespace++;
-                    }
-                }
-
-                Console.WriteLine(builder.ToString().Trim());
-                builder.Clear();
-                indexOfWhitespace = -1;
-
-                if (allWords.Count == 0)
-                {
-                    break;
-                }
+                CheckResult(builder, tokens, allWords, j);
+                last = j;
             }
+        }
+
+        if (builder.Length > 0)
+        {
+            for (int j = last; j < allWords.Count; j++)
+            {
+                CheckResult(builder, tokens, allWords, j); 
+            }
+
+        }
+    }
+  
+    private static void CheckResult(StringBuilder builder, int tokens, List<string> allWords, int j)
+    {
+        if (builder.Length > tokens)
+        {
+            builder.Length--;
+            Console.WriteLine(builder);
+            builder.Clear();
+            builder.Append(allWords[j] + " ");
+            
+        }
+        else if (builder.Length == tokens && builder[builder.Length - 1] == ' ')
+        {
+            builder.Length--;
+            int ind = builder.ToString().IndexOf(' ');
+            if(ind > 0)
+            builder.Insert(builder.ToString().IndexOf(' '), ' ');
+            
+
+            Console.WriteLine(builder);
+            builder.Clear();
+            builder.Append(allWords[j] + " ");
+        }
+        else if (builder.Length < tokens)
+        {
+            builder.Length--;
+
+            int whitespaces = tokens - builder.Length;
+            int startIndex = 0;
+            int indOf = builder.ToString().IndexOf(" ", startIndex);
+            if (indOf < 0)
+            {
+                whitespaces = 0;
+            }
+
+            while (whitespaces != 0)
+            {
+                builder.Insert(indOf, " ");
+                startIndex = indOf;
+                while (builder[startIndex] == ' ')
+                {
+                    startIndex++;
+                }
+                indOf = builder.ToString().IndexOf(" ", startIndex);
+                if (indOf < 0)
+                {
+                    startIndex = 0;
+                    indOf = builder.ToString().IndexOf(" ", startIndex);
+                }
+                whitespaces--;
+            }
+
+            Console.WriteLine(builder);
+            builder.Clear();
+            builder.Append(allWords[j] + " ");
         }
     }
 }

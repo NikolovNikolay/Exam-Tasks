@@ -70,6 +70,7 @@
 using System;
 namespace GreedyDwarf
 {
+    // 100/100
     class GreedyDwarf
     {
         private static long ProccessPattern(int[] Vally)

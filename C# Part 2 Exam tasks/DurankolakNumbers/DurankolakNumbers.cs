@@ -5,88 +5,53 @@ using System.Text;
 
 class DurankolakNumbers
 {
-    static string[] durankolakNumbers = new string[168];
-
     static void Main()
     {
-        AssignDurankulakNumbers();
-        string input = Console.ReadLine();
+        List<string> numbers = new List<string>(168);
 
-        var durankulakDigits = GetDurankulakNumbers(input);
-        durankulakDigits.Reverse();
-
-        long result = CalculateResult(durankulakDigits);
-        Console.WriteLine(result);
-
-        
-    }
-
-    static long CalculateResult(List<string> list)
-    {
-        long result = 0;
-        for (int i = 0; i < list.Count; i++)
+        for (char i = 'A'; i <= 'Z'; i++)
         {
-            result += Array.IndexOf(durankolakNumbers,list[i]) * (long)Math.Pow(168, i);
+            numbers.Add(i.ToString());
         }
 
-        return result;
-    }
+        for (char i = 'a'; i <= 'f'; i++)
+        {
+            for (char j = 'A'; j <= 'Z'; j++)
+            {
+                numbers.Add(i.ToString() + j.ToString());
+            }
+        }
 
-    static List<string> GetDurankulakNumbers(string input)
-    {
-        List<string> digits = new List<string>();
-        var digit = new StringBuilder();
+        string input = Console.ReadLine();
+
+        var builder = new StringBuilder();
+        List<int> convert = new List<int>();
+
         for (int i = 0; i < input.Length; i++)
         {
-            char ch = input[i];
-
-            if (char.IsLower(ch))
+            if (char.IsLower(input[i]))
             {
-                digit.Append(ch);
+                builder.Append(input[i]);
             }
             else
             {
-                digit.Append(ch);
-                digits.Add(digit.ToString());
-                digit.Clear();
+                builder.Append(input[i]);
+                //string str = builder.ToString();
+                int index = Array.IndexOf(numbers.ToArray(), builder.ToString());
+                convert.Add(index);
+                builder.Clear();
             }
         }
 
-        return digits;
-    }
+        long result = 0;
+        int pow = 0;
 
-    static void AssignDurankulakNumbers()
-    {
-        for (int i = 0; i < 168; i++)
+        for (int i = convert.Count - 1; i >= 0; i--)
         {
-            if (i < 26)
-            {
-                durankolakNumbers[i] = ((char)('A' + i)).ToString();
-            }
-            else if (i < 2 * 26)
-            {
-                durankolakNumbers[i] = "a" + durankolakNumbers[i - 26];
-            }
-            else if (i < 3 * 26)
-            {
-                durankolakNumbers[i] = "b" + durankolakNumbers[i - 2*26];
-            }
-            else if (i < 4 * 26)
-            {
-                durankolakNumbers[i] = "c" + durankolakNumbers[i - 3 * 26];
-            }
-            else if (i < 5 * 26)
-            {
-                durankolakNumbers[i] = "d" + durankolakNumbers[i - 4 * 26];
-            }
-            else if (i < 6 * 26)
-            {
-                durankolakNumbers[i] = "e" + durankolakNumbers[i - 5 * 26];
-            }
-            else 
-            {
-                durankolakNumbers[i] = "f" + durankolakNumbers[i - 6 * 26];
-            }
+            result += convert[i] * (long)(Math.Pow(168, pow));
+            pow++;
         }
+
+        Console.WriteLine(result);
     }
 }

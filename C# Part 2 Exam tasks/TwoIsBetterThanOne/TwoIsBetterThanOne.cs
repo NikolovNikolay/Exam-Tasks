@@ -6,81 +6,53 @@ using System.Threading.Tasks;
 
 class TwoIsBetterThanOne
 {
-    private static List<string> unluckyNums = new List<string>() { "1", "2", "4", "6", "7", "8", "9", "0" };
+    static long luckyNums = 0;
 
     static void Main()
     {
-        string[] bounds = Console.ReadLine().Split(' ');
-        long a = long.Parse(bounds[0]);
-        long b = long.Parse(bounds[1]);
+        //-------------- First task -----------------------------------------
+        string[] input = Console.ReadLine().Split();
+        long A = long.Parse(input[0]);
+        long B = long.Parse(input[1]);
 
-        long luckuNums = GenerateLuckyNumbers(a, b);
-        
+        GetLuckyNumber(A, B);
+        Console.WriteLine(luckyNums);
 
-        string[] input = Console.ReadLine().Split(',');
-        List<int> numbers = new List<int>();
-
-        for (int i = 0; i < input.Length; i++)
-        {
-            numbers.Add(int.Parse(input[i]));
-        }
-        int percentage = int.Parse(Console.ReadLine());
-
-        int secondTask = SecondTaskSolver(numbers, percentage);
-        Console.WriteLine(luckuNums);
-        Console.WriteLine(secondTask);
-       
-    }
-
-    static int SecondTaskSolver(List<int> numbers, int percentage)
-    {
-         numbers.Sort();
+        //-------------------------------------------------------------------
+        List<int> numbers = Console.ReadLine().Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(s => int.Parse(s)).ToList();
+        int percent = int.Parse(Console.ReadLine());
+        numbers.Sort();
 
         for (int i = 0; i < numbers.Count; i++)
         {
-            int smaller = 0;
+            int smallOrEqual = 0;
             for (int j = 0; j < numbers.Count; j++)
             {
                 if (numbers[i] >= numbers[j])
                 {
-                    smaller++;
+                    smallOrEqual++;
                 }
             }
-            double per = percentage / 100.0;
-            if (smaller >= (numbers.Count * per))
+
+            if (smallOrEqual >= numbers.Count * (percent / 100.0))
             {
-                return numbers[i];
+                Console.WriteLine(numbers[i]);
+                Environment.Exit(0);
             }
         }
 
-        return numbers[numbers.Count - 1];
+        Console.WriteLine(numbers[numbers.Count - 1]);
     }
-
-    static bool IsPalindrome(long number)
+    //---------------- First task ---------------------------------------
+    private static void GetLuckyNumber(long A, long B)
     {
-        string str = number.ToString();
-        for (int i = 0; i < str.Length/2; i++)
-        {
-            if (str[i] != str[str.Length - 1 - i])
-            {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    static long GenerateLuckyNumbers(long a, long b)
-    {
-        long max = b;
+        List<long> numbers = new List<long> { 3, 5 };
+        long max = B;
         int left = 0;
 
-        var numbers = new List<long>() { 3, 5 };
-        long count = 0;
         while (left < numbers.Count)
         {
             int right = numbers.Count;
-
             for (int i = left; i < right; i++)
             {
                 if (numbers[i] < max)
@@ -94,12 +66,25 @@ class TwoIsBetterThanOne
 
         foreach (var num in numbers)
         {
-            if (num >= a && num <= b && IsPalindrome(num))
+            if (num >= A && num <= B && IsPalindrome(num))
             {
-                count++;
+                luckyNums++;
             }
         }
 
-        return count;
+    }
+
+    static bool IsPalindrome(long number)
+    {
+        string str = number.ToString();
+        for (int i = 0; i < str.Length / 2; i++)
+        {
+            if (str[i] != str[str.Length - 1 - i])
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
