@@ -10,31 +10,29 @@ namespace ThreeInOne
     {
         static void Main()
         {
-            int result1 = FirstTaskResolve();
-            int result2 = SecondTaskResolve();
-            int result3 = ThirdTaskResolve();
-            Console.WriteLine(result1);
-            Console.WriteLine(result2);
-            Console.WriteLine(result3);
+            int index = SolveFirstTask();
+            int bites = SolveSecondTask();
+            int operations = SolveThirdTask();
+            Console.WriteLine(index);
+            Console.WriteLine(bites);
+            Console.WriteLine(operations);
         }
 
-        private static int ThirdTaskResolve()
+        private static int SolveThirdTask()
         {
-            string thirdTaskInputAsString = Console.ReadLine();
-            var thirdTaskInputStringParts = thirdTaskInputAsString.Split(' ');
-            int G1 = int.Parse(thirdTaskInputStringParts[0]);
-            int S1 = int.Parse(thirdTaskInputStringParts[1]);
-            int B1 = int.Parse(thirdTaskInputStringParts[2]);
-            int G2 = int.Parse(thirdTaskInputStringParts[3]);
-            int S2 = int.Parse(thirdTaskInputStringParts[4]);
-            int B2 = int.Parse(thirdTaskInputStringParts[5]);
+            int operations = 0;
+            List<int> resources = Console.ReadLine().Split().Select(s => int.Parse(s)).ToList();
+            int G1 = resources[0]; int G2 = resources[3];
+            int S1 = resources[1]; int S2 = resources[4];
+            int B1 = resources[2]; int B2 = resources[5];
 
-            int exchangeOperations = 0;
+
+
             while (G2 > G1)
             {
                 G2--;
                 S2 += 11;
-                exchangeOperations++;
+                operations++;
             }
 
             while (S2 > S1)
@@ -43,13 +41,13 @@ namespace ThreeInOne
                 {
                     G1--;
                     S1 += 9;
-                    exchangeOperations++;
+                    operations++;
                 }
                 else
                 {
                     S2--;
                     B2 += 11;
-                    exchangeOperations++;
+                    operations++;
                 }
             }
 
@@ -59,13 +57,13 @@ namespace ThreeInOne
                 {
                     S1--;
                     B1 += 9;
-                    exchangeOperations++;
+                    operations++;
                 }
                 else if (G1 > G2)
                 {
                     G1--;
                     S1 += 9;
-                    exchangeOperations++;
+                    operations++;
                 }
                 else
                 {
@@ -73,64 +71,73 @@ namespace ThreeInOne
                 }
             }
 
-            return exchangeOperations; 
+
+            return operations;
         }
 
-        private static int FirstTaskResolve()
+        private static int SolveSecondTask()
         {
-            string[] input = Console.ReadLine().Split(',');
-            int[] points = input.Select(s => int.Parse(s)).ToArray();
-
-            int winner = 0;
-            int maxPoints = 0;
-
-            for (int i = 0; i < points.Length - 1; i++)
+            int bites = 0;
+            List<int> cakes = Console.ReadLine().Split(',').Select(s => int.Parse(s)).ToList();
+            cakes.Sort();
+            int friends = int.Parse(Console.ReadLine());
+            for (int i = cakes.Count - 1; i >= 0; i -= friends + 1)
             {
-                if (points[i] <= 21)
-                {
-                    if (points[i] > maxPoints)
-                    {
-                        winner = i;
-                        maxPoints = points[i];
-                    }
-                }
+                bites += cakes[i];
             }
 
-            Array.Sort(points);
-            int index = Array.IndexOf(points, maxPoints);
-            if (index < points.Length - 1)
+            return bites;
+        }
+
+        private static int SolveFirstTask()
+        {
+            int index = 0;
+            List<int> points = Console.ReadLine().Split(',').Select(s => int.Parse(s)).ToList();
+            int equalToTarget = 0;
+            int indOf = points.IndexOf(21);
+
+            if (indOf >= 0)
             {
-                if (points[index] != points[index + 1])
+                for (int i = 0; i < points.Count; i++)
                 {
-                    return winner;
-                }
-                else
-                {
-                    return -1;
+                    if (points[i] == 21)
+                    {
+                        equalToTarget++;
+                        index = i;
+                    }
+
+                    if (equalToTarget > 1)
+                    {
+                        return -1;
+                    }
                 }
             }
             else
             {
-                return winner;
+                var listt = new List<int>();
+
+                for (int i = 0; i < points.Count; i++)
+                {
+                    if (points[i] < 21)
+                    {
+                        listt.Add(points[i]);
+                    }
+                }
+                listt.Sort();
+
+                if (listt[listt.Count - 1] == listt[listt.Count - 2])
+                {
+                    return -1;
+                }
+                else
+                {
+                    return points.IndexOf(listt[listt.Count - 1]);
+                }
             }
 
-            
+
+            return index;
         }
 
-        private static int SecondTaskResolve()
-        {
-            string[] input = Console.ReadLine().Split(',');
-            int[] bites = input.Select(s => int.Parse(s)).ToArray();
-            int friends = int.Parse(Console.ReadLine());
-            Array.Sort(bites);
-  
-            int length = bites.Length;
-            int result = 0;
-            for (int i = length-1; i >= 0; i-= friends+1)
-            {
-                result += bites[i];
-            }
-            return result;
-        }
     }
 }

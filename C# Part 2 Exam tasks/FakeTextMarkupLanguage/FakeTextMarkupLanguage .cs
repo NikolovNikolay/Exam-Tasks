@@ -6,236 +6,316 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-
-
+// 60 / 100
 class FakeTextMarkupLanguage
 {
-    private static List<string> OpenTags = new List<string> { "<lower>", "<upper>", "<toggle>", "<rev>", "<del>" };
-    private static List<string> CloseTags = new List<string> { "</lower>", "</upper>", "</toggle>", "</rev>", "</del>" };
-    private const char OpenTagChar = '<';
-    private const char CloseTagChar = '>';
-
     static void Main()
     {
+        //Console.SetIn(new StreamReader("input.txt"));
+        string[] tags = new string[] { "rev", "upper", "toggle", "del", "lower" };
+        string[] closeTags = new string[] { "/rev", "/upper", "/toggle", "/del", "/lower" };
+
+
         int lines = int.Parse(Console.ReadLine());
 
-        for (int line = 0; line < lines; line++)
+        for (int i = 0; i < lines; i++)
         {
-            string code = Console.ReadLine();
-            List<string> content = GetCodeContent(code);
+            var words = Console.ReadLine().Split(new char[] { '<', '>' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            var strToMaintain = new StringBuilder();
 
-            if (content.Count > 1)
+            for (int j = words.Count - 1; j >= 0; j--)
             {
-                for (int i = 0; i < content.Count; i++)
+                if (tags.Contains(words[j]))
                 {
-
-                    if (i > 0 && i < content.Count - 1 && !CloseTags.Contains(content[i]) && !OpenTags.Contains(content[i]) &&
-                        OpenTags.IndexOf(content[i - 1]) == CloseTags.IndexOf(content[i + 1]))
+                    if (words[j] == "rev")
                     {
-                        if (content[i - 1] == "<rev>")
+                        if (words[j + 1] == "/rev")
                         {
-                            var sb = new StringBuilder();
-                            for (int j = content[i].Length - 1; j >= 0; j--)
+                            words.RemoveAt(j + 1);
+                            words.RemoveAt(j);
+                            if (!tags.Contains(words[j]) && !closeTags.Contains(words[j]))
                             {
-                                sb.Append(content[i][j]);
-                            }
-                            content[i] = sb.ToString();
-                            content.RemoveAt(i + 1);
-                            content.RemoveAt(i - 1);
-                            i--;
-                            Check(i, content, sb);
-
-                            i = -1;
-                        }
-                        else if (content[i - 1] == "<upper>")
-                        {
-                            var sb = new StringBuilder();
-                            for (int j = 0; j < content[i].Length; j++)
-                            {
-                                if (char.IsLower(content[i][j]))
+                                if (j + 1 < words.Count)
                                 {
-                                    sb.Append(char.ToUpper(content[i][j]));
+                                    if (!tags.Contains(words[j + 1]) && !closeTags.Contains(words[j + 1]))
+                                    {
+                                        words[j] = words[j] + words[j + 1];
+                                        words.RemoveAt(j + 1);
+                                    }
                                 }
-                                else
+                                if (j - 1 >= 0)
                                 {
-                                    sb.Append(content[i][j]);
-                                }
-
-                            }
-                            content[i] = sb.ToString();
-                            content.RemoveAt(i + 1);
-                            content.RemoveAt(i - 1);
-                            i--;
-                            Check(i, content, sb);
-
-                            i = -1;
-                        }
-                        else if (content[i - 1] == "<lower>")
-                        {
-                            var sb = new StringBuilder();
-                            for (int j = 0; j < content[i].Length; j++)
-                            {
-                                if (char.IsUpper(content[i][j]))
-                                {
-                                    sb.Append(char.ToLower(content[i][j]));
-                                }
-                                else
-                                {
-                                    sb.Append(content[i][j]);
-                                }
-
-                            }
-                            content[i] = sb.ToString();
-                            content.RemoveAt(i + 1);
-                            content.RemoveAt(i - 1);
-                            i--;
-                            Check(i, content, sb);
-
-                            i = -1;
-                        }
-                        else if (content[i - 1] == "<toggle>")
-                        {
-                            var sb = new StringBuilder();
-                            for (int j = 0; j < content[i].Length; j++)
-                            {
-                                if (char.IsUpper(content[i][j]))
-                                {
-                                    sb.Append(char.ToLower(content[i][j]));
-                                }
-                                else
-                                {
-                                    sb.Append(char.ToUpper(content[i][j]));
+                                    if (!tags.Contains(words[j - 1]) && !closeTags.Contains(words[j - 1]))
+                                    {
+                                        words[j - 1] = words[j - 1] + words[j];
+                                        words.RemoveAt(j);
+                                    }
                                 }
                             }
 
-                            content[i] = sb.ToString();
-                            content.RemoveAt(i + 1);
-                            content.RemoveAt(i - 1);
-                            i--;
-                            Check(i, content, sb);
-
-                            i = -1;
+                            j = words.Count;
+                            continue;
                         }
-                        else if (!OpenTags.Contains(content[i - 1]))
+                        for (int k = words[j + 1].Length - 1; k >= 0; k--)
                         {
-                            content[i] = content[i - 1] + content[i];
-                            content.RemoveAt(i - 1);
-
-                            i = -1;
+                            strToMaintain.Append(words[j + 1][k]);
                         }
-                    }
-                    else if (i > 0 && i < content.Count - 1 && !CloseTags.Contains(content[i]) && !OpenTags.Contains(content[i]) &&
-                   OpenTags.Contains(content[i - 1]) && !CloseTags.Contains(content[i + 1]))
-                    {
-                        content[i] = content[i] + content[i + 1];
-                        content.RemoveAt(i + 1);
-                        i = -1;
-                    }
-                    else if (i > 0 && i < content.Count - 1 && !CloseTags.Contains(content[i]) && !OpenTags.Contains(content[i]) &&
-                    !OpenTags.Contains(content[i - 1]) && CloseTags.Contains(content[i + 1]))
-                    {
-                        content[i - 1] = content[i - 1] + content[i];
-                        content.RemoveAt(i - 1);
-                        i = -1;
-                    }
-                    else if (content[i] == "<del>")
-                    {
-                        int index = content.IndexOf("</del>");
-                        for (int j = index; j >= i; j--)
+                        words[j] = strToMaintain.ToString();
+                        strToMaintain.Clear();
+                        words.RemoveAt(words.IndexOf("/rev", j));
+                        words.RemoveAt(j + 1);
+                        if (j + 1 < words.Count)
                         {
-                            content.RemoveAt(j);
+                            if (!tags.Contains(words[j + 1]) && !closeTags.Contains(words[j + 1]))
+                            {
+                                words[j] = words[j] + words[j + 1];
+                                words.RemoveAt(j + 1);
+                            }
                         }
-                        i = -1;
-                    }
-
-                    if (content.Count == 2)
-                    {
-                        content[0] = content[0] + content[1];
-                        content.RemoveAt(1);
-                        if (content.Count == 1)
+                        if (j - 1 >= 0)
                         {
-                            Console.WriteLine(content[0]);
-                            break;
+                            if (!tags.Contains(words[j - 1]) && !closeTags.Contains(words[j - 1]))
+                            {
+                                words[j - 1] = words[j - 1] + words[j];
+                                words.RemoveAt(j);
+                            }
                         }
+
+                        j = words.Count;
+                    }
+                    else if (words[j] == "upper")
+                    {
+                        if (words[j + 1] == "/upper")
+                        {
+                            words.RemoveAt(j + 1);
+                            words.RemoveAt(j);
+                            if (!tags.Contains(words[j]) && !closeTags.Contains(words[j]))
+                            {
+                                if (j + 1 < words.Count)
+                                {
+                                    if (!tags.Contains(words[j + 1]) && !closeTags.Contains(words[j + 1]))
+                                    {
+                                        words[j] = words[j] + words[j + 1];
+                                        words.RemoveAt(j + 1);
+                                    }
+                                }
+                                if (j - 1 >= 0)
+                                {
+                                    if (!tags.Contains(words[j - 1]) && !closeTags.Contains(words[j - 1]))
+                                    {
+                                        words[j - 1] = words[j - 1] + words[j];
+                                        words.RemoveAt(j);
+                                    }
+                                }
+                            }
+
+                            j = words.Count;
+                            continue;
+                        }
+                        for (int k = 0; k < words[j + 1].Length; k++)
+                        {
+                            if (char.IsLower(words[j + 1][k]))
+                                strToMaintain.Append(char.ToUpper(words[j + 1][k]));
+                            else
+                                strToMaintain.Append(words[j + 1][k]);
+                        }
+                        words[j] = strToMaintain.ToString();
+                        strToMaintain.Clear();
+                        words.RemoveAt(words.IndexOf("/upper", j));
+                        words.RemoveAt(j + 1);
+                        if (j + 1 < words.Count)
+                        {
+                            if (!tags.Contains(words[j + 1]) && !closeTags.Contains(words[j + 1]))
+                            {
+                                words[j] = words[j] + words[j + 1];
+                                words.RemoveAt(j + 1);
+                            }
+                        }
+                        if (j - 1 >= 0)
+                        {
+                            if (!tags.Contains(words[j - 1]) && !closeTags.Contains(words[j - 1]))
+                            {
+                                words[j - 1] = words[j - 1] + words[j];
+                                words.RemoveAt(j);
+                            }
+                        }
+
+                        j = words.Count;
+                    }
+                    else if (words[j] == "lower")
+                    {
+                        if (words[j + 1] == "/lower")
+                        {
+                            words.RemoveAt(j + 1);
+                            words.RemoveAt(j);
+                            if (!tags.Contains(words[j]) && !closeTags.Contains(words[j]))
+                            {
+                                if (j + 1 < words.Count)
+                                {
+                                    if (!tags.Contains(words[j + 1]) && !closeTags.Contains(words[j + 1]))
+                                    {
+                                        words[j] = words[j] + words[j + 1];
+                                        words.RemoveAt(j + 1);
+                                    }
+                                }
+                                if (j - 1 >= 0)
+                                {
+                                    if (!tags.Contains(words[j - 1]) && !closeTags.Contains(words[j - 1]))
+                                    {
+                                        words[j - 1] = words[j - 1] + words[j];
+                                        words.RemoveAt(j);
+                                    }
+                                }
+                            }
+
+                            j = words.Count;
+                            continue;
+                        }
+                        for (int k = 0; k < words[j + 1].Length; k++)
+                        {
+                            if (char.IsUpper(words[j + 1][k]))
+                                strToMaintain.Append(char.ToLower(words[j + 1][k]));
+                            else
+                                strToMaintain.Append(words[j + 1][k]);
+                        }
+                        words[j] = strToMaintain.ToString();
+                        strToMaintain.Clear();
+                        words.RemoveAt(words.IndexOf("/lower", j));
+                        words.RemoveAt(j + 1);
+                        if (j + 1 < words.Count)
+                        {
+                            if (!tags.Contains(words[j + 1]) && !closeTags.Contains(words[j + 1]))
+                            {
+                                words[j] = words[j] + words[j + 1];
+                                words.RemoveAt(j + 1);
+                            }
+                        }
+                        if (j - 1 >= 0)
+                        {
+                            if (!tags.Contains(words[j - 1]) && !closeTags.Contains(words[j - 1]))
+                            {
+                                words[j - 1] = words[j - 1] + words[j];
+                                words.RemoveAt(j);
+                            }
+                        }
+
+                        j = words.Count;
+                    }
+                    else if (words[j] == "toggle")
+                    {
+                        if (words[j + 1] == "/toggle")
+                        {
+                            words.RemoveAt(j + 1);
+                            words.RemoveAt(j);
+                            if (!tags.Contains(words[j]) && !closeTags.Contains(words[j]))
+                            {
+                                if (j + 1 < words.Count)
+                                {
+                                    if (!tags.Contains(words[j + 1]) && !closeTags.Contains(words[j + 1]))
+                                    {
+                                        words[j] = words[j] + words[j + 1];
+                                        words.RemoveAt(j + 1);
+                                    }
+                                }
+                                if (j - 1 >= 0)
+                                {
+                                    if (!tags.Contains(words[j - 1]) && !closeTags.Contains(words[j - 1]))
+                                    {
+                                        words[j - 1] = words[j - 1] + words[j];
+                                        words.RemoveAt(j);
+                                    }
+                                }
+                            }
+
+                            j = words.Count;
+                            continue;
+                        }
+                        for (int k = 0; k < words[j + 1].Length; k++)
+                        {
+                            if (char.IsUpper(words[j + 1][k]))
+                                strToMaintain.Append(char.ToLower(words[j + 1][k]));
+                            else
+                                strToMaintain.Append(char.ToUpper(words[j + 1][k]));
+                        }
+                        words[j] = strToMaintain.ToString();
+                        strToMaintain.Clear();
+                        words.RemoveAt(words.IndexOf("/toggle", j));
+                        words.RemoveAt(j + 1);
+                        if (j + 1 < words.Count)
+                        {
+                            if (!tags.Contains(words[j + 1]) && !closeTags.Contains(words[j + 1]))
+                            {
+                                words[j] = words[j] + words[j + 1];
+                                words.RemoveAt(j + 1);
+                            }
+                        }
+                        if (j - 1 >= 0)
+                        {
+                            if (!tags.Contains(words[j - 1]) && !closeTags.Contains(words[j - 1]))
+                            {
+                                words[j - 1] = words[j - 1] + words[j];
+                                words.RemoveAt(j);
+                            }
+                        }
+
+                        j = words.Count;
+                    }
+                    else if (words[j] == "del")
+                    {
+                        if (words[j + 1] == "/del")
+                        {
+                            words.RemoveAt(j + 1);
+                            words.RemoveAt(j);
+                            if (!tags.Contains(words[j]) && !closeTags.Contains(words[j]))
+                            {
+                                if (j + 1 < words.Count)
+                                {
+                                    if (!tags.Contains(words[j + 1]) && !closeTags.Contains(words[j + 1]))
+                                    {
+                                        words[j] = words[j] + words[j + 1];
+                                        words.RemoveAt(j + 1);
+                                    }
+                                }
+                                if (j - 1 >= 0)
+                                {
+                                    if (!tags.Contains(words[j - 1]) && !closeTags.Contains(words[j - 1]))
+                                    {
+                                        words[j - 1] = words[j - 1] + words[j];
+                                        words.RemoveAt(j);
+                                    }
+                                }
+                            }
+
+                            j = words.Count;
+                            continue;
+                        }
+                        words.RemoveAt(words.IndexOf("/del", j));
+                        words.RemoveAt(j + 1);
+                        words.RemoveAt(j);
+                        if (j + 1 < words.Count)
+                        {
+                            if (!tags.Contains(words[j + 1]) && !closeTags.Contains(words[j + 1]))
+                            {
+                                words[j] = words[j] + words[j + 1];
+                                words.RemoveAt(j + 1);
+                            }
+                        }
+                        if (j - 1 >= 0)
+                        {
+                            if (!tags.Contains(words[j - 1]) && !closeTags.Contains(words[j - 1]))
+                            {
+                                words[j - 1] = words[j - 1] + words[j];
+                                words.RemoveAt(j);
+                            }
+                        }
+
+                        j = words.Count;
                     }
                 }
 
-            }
-            else
-            {
-                Check(0, content, new StringBuilder());
-            }
-        }
-    }
 
-    private static void Check(int i, List<string> content, StringBuilder sb)
-    {
-        if (i > 0 && i < content.Count - 1)
-        {
-            if (!CloseTags.Contains(content[i + 1]) && !OpenTags.Contains(content[i + 1]))
-            {
-                sb.Insert(sb.Length, content[i + 1]);
-                content[i] = sb.ToString();
-                content.RemoveAt(i + 1);
             }
-            else if (!CloseTags.Contains(content[i - 1]) && !OpenTags.Contains(content[i - 1]))
-            {
-                sb.Insert(0, content[i - 1]);
-                content[i] = sb.ToString();
-                content.RemoveAt(i - 1);
-            }
+            Console.WriteLine(words[0]);
         }
-        else if (content.Count == 2)
-        {
-            content[0] = content[0] + content[1];
-            content.RemoveAt(1);
-        }
-
-        if (content.Count == 1)
-        {
-            Console.WriteLine(content[0]);
-            return;
-        }
-    }
-
-    private static List<string> GetCodeContent(string code)
-    {
-        List<string> content = new List<string>();
-        var builder = new StringBuilder();
-        for (int i = 0; i < code.Length; i++)
-        {
-            char curChar = code[i];
-            if (curChar != OpenTagChar)
-            {
-                builder.Append(curChar);
-            }
-            else
-            {
-                if (builder.Length > 0)
-                {
-                    content.Add(builder.ToString());
-                    builder.Clear();
-                }
-                while (true)
-                {
-                    builder.Append(curChar);
-                    i++;
-                    curChar = code[i];
-                    if (curChar == CloseTagChar)
-                    {
-                        builder.Append(curChar);
-                        content.Add(builder.ToString());
-                        builder.Clear();
-                        break;
-                    }
-                }
-            }
-        }
-        if (builder.Length > 0)
-        {
-            content.Add(builder.ToString());
-        }
-
-        return content;
     }
 }

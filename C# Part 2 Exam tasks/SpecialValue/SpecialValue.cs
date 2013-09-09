@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 // 100 / 100
 class SpecialValue
