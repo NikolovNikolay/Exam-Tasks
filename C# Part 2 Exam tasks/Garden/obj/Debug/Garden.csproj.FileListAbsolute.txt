@@ -1,1 +1,5 @@
 E:\Dropbox\Telerik Projects\ExamExercises Part 2\Garden\bin\Debug\Garden.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Garden\bin\Debug\Garden.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Garden\bin\Debug\Garden.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Garden\obj\Debug\Garden.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\Garden\obj\Debug\Garden.pdb

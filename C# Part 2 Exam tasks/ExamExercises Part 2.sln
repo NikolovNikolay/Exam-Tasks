@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaspichanNumbers", "01.KaspichanNumbers\KaspichanNumbers.csproj", "{025A7599-2BDF-49F0-865A-E77965C290C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreedyDwarf", "02.GreedyDwarf\GreedyDwarf.csproj", "{0CF04CB8-4110-4DCB-8EEA-A113255E1187}"
@@ -74,6 +76,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joro", "Joro\Joro.csproj", "{10A9089E-B3EA-4F93-A394-7474F52A330B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "Employees\Employees.csproj", "{96E9DA4D-7D63-4EC1-811D-68208017E36C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCode", "CleanCode\CleanCode.csproj", "{74F2FA71-8E83-49CA-AE08-B0DFF53D6BCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhpVariables", "PhpVariables\PhpVariables.csproj", "{7CB6A10C-6C58-4080-862B-D768B5938495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DLines", "3DLines\3DLines.csproj", "{652E8697-3131-4755-AFBC-D940569AED26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BombingCuboids", "BombingCuboids\BombingCuboids.csproj", "{27EB2343-C462-4A78-9FEC-008B3B6DBD04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -229,6 +239,22 @@ Global
 		{96E9DA4D-7D63-4EC1-811D-68208017E36C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96E9DA4D-7D63-4EC1-811D-68208017E36C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96E9DA4D-7D63-4EC1-811D-68208017E36C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F2FA71-8E83-49CA-AE08-B0DFF53D6BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F2FA71-8E83-49CA-AE08-B0DFF53D6BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F2FA71-8E83-49CA-AE08-B0DFF53D6BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F2FA71-8E83-49CA-AE08-B0DFF53D6BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB6A10C-6C58-4080-862B-D768B5938495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB6A10C-6C58-4080-862B-D768B5938495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB6A10C-6C58-4080-862B-D768B5938495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB6A10C-6C58-4080-862B-D768B5938495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652E8697-3131-4755-AFBC-D940569AED26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652E8697-3131-4755-AFBC-D940569AED26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652E8697-3131-4755-AFBC-D940569AED26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652E8697-3131-4755-AFBC-D940569AED26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27EB2343-C462-4A78-9FEC-008B3B6DBD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EB2343-C462-4A78-9FEC-008B3B6DBD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EB2343-C462-4A78-9FEC-008B3B6DBD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EB2343-C462-4A78-9FEC-008B3B6DBD04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
