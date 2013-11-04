@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\OOPExamExercises\02.AcademyGeometry\bin\Debug\02.AcademyGeometry.exe.config
+E:\Dropbox\Telerik Projects\OOPExamExercises\02.AcademyGeometry\bin\Debug\02.AcademyGeometry.exe
+E:\Dropbox\Telerik Projects\OOPExamExercises\02.AcademyGeometry\bin\Debug\02.AcademyGeometry.pdb
+E:\Dropbox\Telerik Projects\OOPExamExercises\02.AcademyGeometry\obj\Debug\02.AcademyGeometry.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\OOPExamExercises\02.AcademyGeometry\obj\Debug\02.AcademyGeometry.exe
+E:\Dropbox\Telerik Projects\OOPExamExercises\02.AcademyGeometry\obj\Debug\02.AcademyGeometry.pdb
