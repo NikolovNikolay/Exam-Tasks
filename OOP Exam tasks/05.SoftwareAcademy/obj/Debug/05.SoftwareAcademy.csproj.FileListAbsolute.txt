@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\OOPExamExercises\05.SoftwareAcademy\bin\Debug\05.SoftwareAcademy.exe.config
+E:\Dropbox\Telerik Projects\OOPExamExercises\05.SoftwareAcademy\bin\Debug\05.SoftwareAcademy.exe
+E:\Dropbox\Telerik Projects\OOPExamExercises\05.SoftwareAcademy\bin\Debug\05.SoftwareAcademy.pdb
+E:\Dropbox\Telerik Projects\OOPExamExercises\05.SoftwareAcademy\obj\Debug\05.SoftwareAcademy.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\OOPExamExercises\05.SoftwareAcademy\obj\Debug\05.SoftwareAcademy.exe
+E:\Dropbox\Telerik Projects\OOPExamExercises\05.SoftwareAcademy\obj\Debug\05.SoftwareAcademy.pdb
