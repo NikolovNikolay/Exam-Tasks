@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\OOPExamExercises\03.HTMLRenderer\bin\Debug\03.HTMLRenderer.exe.config
-E:\Dropbox\Telerik Projects\OOPExamExercises\03.HTMLRenderer\bin\Debug\03.HTMLRenderer.exe
-E:\Dropbox\Telerik Projects\OOPExamExercises\03.HTMLRenderer\bin\Debug\03.HTMLRenderer.pdb
-E:\Dropbox\Telerik Projects\OOPExamExercises\03.HTMLRenderer\obj\Debug\03.HTMLRenderer.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\OOPExamExercises\03.HTMLRenderer\obj\Debug\03.HTMLRenderer.exe
-E:\Dropbox\Telerik Projects\OOPExamExercises\03.HTMLRenderer\obj\Debug\03.HTMLRenderer.pdb

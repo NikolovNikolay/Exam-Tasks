@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\OOPExamExercises\04.AcademyEcosystem\bin\Debug\04.AcademyEcosystem.exe.config
-E:\Dropbox\Telerik Projects\OOPExamExercises\04.AcademyEcosystem\bin\Debug\04.AcademyEcosystem.exe
-E:\Dropbox\Telerik Projects\OOPExamExercises\04.AcademyEcosystem\bin\Debug\04.AcademyEcosystem.pdb
-E:\Dropbox\Telerik Projects\OOPExamExercises\04.AcademyEcosystem\obj\Debug\04.AcademyEcosystem.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\OOPExamExercises\04.AcademyEcosystem\obj\Debug\04.AcademyEcosystem.exe
-E:\Dropbox\Telerik Projects\OOPExamExercises\04.AcademyEcosystem\obj\Debug\04.AcademyEcosystem.pdb

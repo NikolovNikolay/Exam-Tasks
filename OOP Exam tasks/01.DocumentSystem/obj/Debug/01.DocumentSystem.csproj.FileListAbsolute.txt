@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\OOPExamExercises\01.DocumentSystem\bin\Debug\01.DocumentSystem.exe.config
-E:\Dropbox\Telerik Projects\OOPExamExercises\01.DocumentSystem\bin\Debug\01.DocumentSystem.exe
-E:\Dropbox\Telerik Projects\OOPExamExercises\01.DocumentSystem\bin\Debug\01.DocumentSystem.pdb
-E:\Dropbox\Telerik Projects\OOPExamExercises\01.DocumentSystem\obj\Debug\01.DocumentSystem.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\OOPExamExercises\01.DocumentSystem\obj\Debug\01.DocumentSystem.exe
-E:\Dropbox\Telerik Projects\OOPExamExercises\01.DocumentSystem\obj\Debug\01.DocumentSystem.pdb

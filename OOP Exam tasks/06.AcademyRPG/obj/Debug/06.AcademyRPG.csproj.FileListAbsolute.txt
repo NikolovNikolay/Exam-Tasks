@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\OOPExamExercises\06.AcademyRPG\bin\Debug\06.AcademyRPG.exe.config
-E:\Dropbox\Telerik Projects\OOPExamExercises\06.AcademyRPG\obj\Debug\06.AcademyRPG.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\OOPExamExercises\06.AcademyRPG\bin\Debug\06.AcademyRPG.exe
-E:\Dropbox\Telerik Projects\OOPExamExercises\06.AcademyRPG\bin\Debug\06.AcademyRPG.pdb
-E:\Dropbox\Telerik Projects\OOPExamExercises\06.AcademyRPG\obj\Debug\06.AcademyRPG.exe
-E:\Dropbox\Telerik Projects\OOPExamExercises\06.AcademyRPG\obj\Debug\06.AcademyRPG.pdb
