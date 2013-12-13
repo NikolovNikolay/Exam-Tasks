@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\TwoIsBetterThanOne\bin\Debug\TwoIsBetterThanOne.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\TwoIsBetterThanOne\bin\Debug\TwoIsBetterThanOne.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\TwoIsBetterThanOne\bin\Debug\TwoIsBetterThanOne.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\TwoIsBetterThanOne\obj\Debug\TwoIsBetterThanOne.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\TwoIsBetterThanOne\obj\Debug\TwoIsBetterThanOne.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\TwoIsBetterThanOne\obj\Debug\TwoIsBetterThanOne.csprojResolveAssemblyReference.cache

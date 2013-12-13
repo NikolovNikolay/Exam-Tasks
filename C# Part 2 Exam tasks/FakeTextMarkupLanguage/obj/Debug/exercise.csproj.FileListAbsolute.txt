@@ -1,7 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\exercise\bin\Debug\exercise.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\exercise\bin\Debug\exercise.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\exercise\bin\Debug\exercise.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\exercise\obj\Debug\exercise.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\exercise\obj\Debug\exercise.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\exercise\obj\Debug\exercise.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\9GaGNumbers\bin\Debug\exercise.exe.config

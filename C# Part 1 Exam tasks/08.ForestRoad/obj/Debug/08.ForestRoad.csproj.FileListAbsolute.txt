@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises\08.ForestRoad\bin\Debug\08.ForestRoad.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises\08.ForestRoad\bin\Debug\08.ForestRoad.exe
-E:\Dropbox\Telerik Projects\ExamExercises\08.ForestRoad\bin\Debug\08.ForestRoad.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\08.ForestRoad\obj\Debug\08.ForestRoad.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises\08.ForestRoad\obj\Debug\08.ForestRoad.exe
-E:\Dropbox\Telerik Projects\ExamExercises\08.ForestRoad\obj\Debug\08.ForestRoad.pdb

@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises\17.FallDown\bin\Debug\17.FallDown.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises\17.FallDown\bin\Debug\17.FallDown.exe
-E:\Dropbox\Telerik Projects\ExamExercises\17.FallDown\bin\Debug\17.FallDown.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\17.FallDown\obj\Debug\17.FallDown.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises\17.FallDown\obj\Debug\17.FallDown.exe
-E:\Dropbox\Telerik Projects\ExamExercises\17.FallDown\obj\Debug\17.FallDown.pdb

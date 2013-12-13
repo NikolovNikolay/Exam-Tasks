@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises\02.ShipDamage\bin\Debug\02.ShipDamage.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises\02.ShipDamage\bin\Debug\02.ShipDamage.exe
-E:\Dropbox\Telerik Projects\ExamExercises\02.ShipDamage\bin\Debug\02.ShipDamage.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\02.ShipDamage\obj\Debug\02.ShipDamage.exe
-E:\Dropbox\Telerik Projects\ExamExercises\02.ShipDamage\obj\Debug\02.ShipDamage.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\02.ShipDamage\obj\Debug\02.ShipDamage.csprojResolveAssemblyReference.cache

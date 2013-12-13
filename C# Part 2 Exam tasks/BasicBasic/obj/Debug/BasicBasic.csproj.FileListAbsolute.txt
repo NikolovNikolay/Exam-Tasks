@@ -1,7 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicBasic\bin\Debug\BasicBasic.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicBasic\obj\Debug\BasicBasic.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicBasic\bin\Debug\BasicBasic.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicBasic\bin\Debug\BasicBasic.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicBasic\obj\Debug\BasicBasic.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicBasic\obj\Debug\BasicBasic.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\FakeTextMarkupLanguage\bin\Debug\BasicBasic.exe.config

@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Cooking\bin\Debug\Cooking.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Cooking\bin\Debug\Cooking.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Cooking\bin\Debug\Cooking.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Cooking\obj\Debug\Cooking.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Cooking\obj\Debug\Cooking.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Cooking\obj\Debug\Cooking.pdb

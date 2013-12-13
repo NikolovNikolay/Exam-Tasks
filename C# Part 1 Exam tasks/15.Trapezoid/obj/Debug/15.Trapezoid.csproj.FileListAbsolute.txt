@@ -1,5 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises\15.Trapezoid\bin\Debug\15.Trapezoid.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises\15.Trapezoid\bin\Debug\15.Trapezoid.exe
-E:\Dropbox\Telerik Projects\ExamExercises\15.Trapezoid\bin\Debug\15.Trapezoid.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\15.Trapezoid\obj\Debug\15.Trapezoid.exe
-E:\Dropbox\Telerik Projects\ExamExercises\15.Trapezoid\obj\Debug\15.Trapezoid.pdb

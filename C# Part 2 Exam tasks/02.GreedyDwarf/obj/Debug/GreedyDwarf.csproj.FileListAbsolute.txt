@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\02.GreedyDwarf\bin\Debug\02.GreedyDwarf.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\02.GreedyDwarf\obj\Debug\02.GreedyDwarf.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\02.GreedyDwarf\obj\Debug\02.GreedyDwarf.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\02.GreedyDwarf\bin\Debug\02.GreedyDwarf.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\02.GreedyDwarf\bin\Debug\02.GreedyDwarf.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\02.GreedyDwarf\obj\Debug\GreedyDwarf.csprojResolveAssemblyReference.cache

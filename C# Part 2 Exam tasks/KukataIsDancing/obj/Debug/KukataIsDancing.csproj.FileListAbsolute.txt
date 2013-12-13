@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\KukataIsDancing\bin\Debug\KukataIsDancing.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\KukataIsDancing\bin\Debug\KukataIsDancing.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\KukataIsDancing\bin\Debug\KukataIsDancing.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\KukataIsDancing\obj\Debug\KukataIsDancing.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\KukataIsDancing\obj\Debug\KukataIsDancing.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\KukataIsDancing\obj\Debug\KukataIsDancing.pdb

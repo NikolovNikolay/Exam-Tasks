@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises\34.Sheets\bin\Debug\34.Sheets.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises\34.Sheets\bin\Debug\34.Sheets.exe
-E:\Dropbox\Telerik Projects\ExamExercises\34.Sheets\bin\Debug\34.Sheets.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\34.Sheets\obj\Debug\34.Sheets.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises\34.Sheets\obj\Debug\34.Sheets.exe
-E:\Dropbox\Telerik Projects\ExamExercises\34.Sheets\obj\Debug\34.Sheets.pdb

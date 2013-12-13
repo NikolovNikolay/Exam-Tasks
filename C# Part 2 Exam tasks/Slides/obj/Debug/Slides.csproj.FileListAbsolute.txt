@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Slides\bin\Debug\Slides.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Slides\bin\Debug\Slides.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Slides\bin\Debug\Slides.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Slides\obj\Debug\Slides.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Slides\obj\Debug\Slides.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Slides\obj\Debug\Slides.pdb

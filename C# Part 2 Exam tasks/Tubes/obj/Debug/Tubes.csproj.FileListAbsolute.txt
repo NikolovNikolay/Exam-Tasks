@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Tubes\bin\Debug\Tubes.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Tubes\bin\Debug\Tubes.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Tubes\bin\Debug\Tubes.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Tubes\obj\Debug\Tubes.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Tubes\obj\Debug\Tubes.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Tubes\obj\Debug\Tubes.pdb

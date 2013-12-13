@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises\10.SubsetSums\bin\Debug\10.SubsetSums.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises\10.SubsetSums\bin\Debug\10.SubsetSums.exe
-E:\Dropbox\Telerik Projects\ExamExercises\10.SubsetSums\bin\Debug\10.SubsetSums.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\10.SubsetSums\obj\Debug\10.SubsetSums.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises\10.SubsetSums\obj\Debug\10.SubsetSums.exe
-E:\Dropbox\Telerik Projects\ExamExercises\10.SubsetSums\obj\Debug\10.SubsetSums.pdb

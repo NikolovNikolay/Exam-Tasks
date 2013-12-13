@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\OneTaskIsNeverENough\bin\Debug\OneTaskIsNeverENough.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\OneTaskIsNeverENough\bin\Debug\OneTaskIsNeverENough.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\OneTaskIsNeverENough\bin\Debug\OneTaskIsNeverENough.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\OneTaskIsNeverENough\obj\Debug\OneTaskIsNeverENough.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\OneTaskIsNeverENough\obj\Debug\OneTaskIsNeverENough.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\OneTaskIsNeverENough\obj\Debug\OneTaskIsNeverENough.pdb

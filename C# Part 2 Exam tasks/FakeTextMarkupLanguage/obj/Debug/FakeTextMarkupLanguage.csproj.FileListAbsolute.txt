@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\FakeTextMarkupLanguage\bin\Debug\FakeTextMarkupLanguage.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\FakeTextMarkupLanguage\bin\Debug\FakeTextMarkupLanguage.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\FakeTextMarkupLanguage\bin\Debug\FakeTextMarkupLanguage.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\FakeTextMarkupLanguage\obj\Debug\FakeTextMarkupLanguage.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\FakeTextMarkupLanguage\obj\Debug\FakeTextMarkupLanguage.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\FakeTextMarkupLanguage\obj\Debug\FakeTextMarkupLanguage.pdb

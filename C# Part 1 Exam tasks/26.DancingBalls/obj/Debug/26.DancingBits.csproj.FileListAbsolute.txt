@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises\26.DancingBalls\bin\Debug\26.DancingBalls.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises\26.DancingBalls\bin\Debug\26.DancingBalls.exe
-E:\Dropbox\Telerik Projects\ExamExercises\26.DancingBalls\bin\Debug\26.DancingBalls.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\26.DancingBalls\obj\Debug\26.DancingBits.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises\26.DancingBalls\obj\Debug\26.DancingBalls.exe
-E:\Dropbox\Telerik Projects\ExamExercises\26.DancingBalls\obj\Debug\26.DancingBalls.pdb

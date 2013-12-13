@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises\18.FirTree\bin\Debug\18.FirTree.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises\18.FirTree\bin\Debug\18.FirTree.exe
-E:\Dropbox\Telerik Projects\ExamExercises\18.FirTree\bin\Debug\18.FirTree.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\18.FirTree\obj\Debug\18.FirTree.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises\18.FirTree\obj\Debug\18.FirTree.exe
-E:\Dropbox\Telerik Projects\ExamExercises\18.FirTree\obj\Debug\18.FirTree.pdb

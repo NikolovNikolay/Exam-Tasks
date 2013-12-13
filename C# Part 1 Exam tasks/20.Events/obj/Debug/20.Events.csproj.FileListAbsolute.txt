@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises\20.Events\bin\Debug\20.Events.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises\20.Events\bin\Debug\20.Events.exe
-E:\Dropbox\Telerik Projects\ExamExercises\20.Events\bin\Debug\20.Events.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\20.Events\obj\Debug\20.Events.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises\20.Events\obj\Debug\20.Events.exe
-E:\Dropbox\Telerik Projects\ExamExercises\20.Events\obj\Debug\20.Events.pdb

@@ -1,5 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CoffeeMachine\bin\Debug\CoffeeMachine.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CoffeeMachine\bin\Debug\CoffeeMachine.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CoffeeMachine\bin\Debug\CoffeeMachine.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CoffeeMachine\obj\Debug\CoffeeMachine.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CoffeeMachine\obj\Debug\CoffeeMachine.pdb

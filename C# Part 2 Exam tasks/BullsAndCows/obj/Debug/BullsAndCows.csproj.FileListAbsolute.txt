@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BullsAndCows\bin\Debug\BullsAndCows.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BullsAndCows\bin\Debug\BullsAndCows.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BullsAndCows\bin\Debug\BullsAndCows.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BullsAndCows\obj\Debug\BullsAndCows.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BullsAndCows\obj\Debug\BullsAndCows.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BullsAndCows\obj\Debug\BullsAndCows.csprojResolveAssemblyReference.cache

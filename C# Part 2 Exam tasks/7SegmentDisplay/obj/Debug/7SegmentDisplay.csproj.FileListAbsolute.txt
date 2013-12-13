@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\7SegmentDisplay\bin\Debug\7SegmentDisplay.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\7SegmentDisplay\bin\Debug\7SegmentDisplay.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\7SegmentDisplay\bin\Debug\7SegmentDisplay.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\7SegmentDisplay\obj\Debug\7SegmentDisplay.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\7SegmentDisplay\obj\Debug\7SegmentDisplay.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\7SegmentDisplay\obj\Debug\7SegmentDisplay.pdb

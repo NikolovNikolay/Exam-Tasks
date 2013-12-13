@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicLanguage\bin\Debug\BasicLanguage.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicLanguage\bin\Debug\BasicLanguage.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicLanguage\bin\Debug\BasicLanguage.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicLanguage\obj\Debug\BasicLanguage.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicLanguage\obj\Debug\BasicLanguage.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\BasicLanguage\obj\Debug\BasicLanguage.pdb

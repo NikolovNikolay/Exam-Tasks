@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises\11.AstrologicalNumbers\bin\Debug\11.AstrologicalNumbers.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises\11.AstrologicalNumbers\bin\Debug\11.AstrologicalNumbers.exe
-E:\Dropbox\Telerik Projects\ExamExercises\11.AstrologicalNumbers\bin\Debug\11.AstrologicalNumbers.pdb
-E:\Dropbox\Telerik Projects\ExamExercises\11.AstrologicalNumbers\obj\Debug\11.AstrologicalNumbers.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises\11.AstrologicalNumbers\obj\Debug\11.AstrologicalNumbers.exe
-E:\Dropbox\Telerik Projects\ExamExercises\11.AstrologicalNumbers\obj\Debug\11.AstrologicalNumbers.pdb

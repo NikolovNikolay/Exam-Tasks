@@ -1,5 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\PhpVariables\bin\Debug\PhpVariables.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\PhpVariables\bin\Debug\PhpVariables.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\PhpVariables\bin\Debug\PhpVariables.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\PhpVariables\obj\Debug\PhpVariables.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\PhpVariables\obj\Debug\PhpVariables.pdb

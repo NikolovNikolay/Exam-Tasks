@@ -1,5 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Fire\bin\Debug\Fire.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Fire\bin\Debug\Fire.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Fire\bin\Debug\Fire.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Fire\obj\Debug\Fire.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Fire\obj\Debug\Fire.pdb

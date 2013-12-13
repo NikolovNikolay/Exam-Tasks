@@ -1,5 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Joro\bin\Debug\Joro.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Joro\bin\Debug\Joro.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Joro\bin\Debug\Joro.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Joro\obj\Debug\Joro.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\Joro\obj\Debug\Joro.pdb

@@ -1,6 +1,0 @@
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CSharpBrackets\bin\Debug\CSharpBrackets.exe.config
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CSharpBrackets\bin\Debug\CSharpBrackets.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CSharpBrackets\bin\Debug\CSharpBrackets.pdb
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CSharpBrackets\obj\Debug\CSharpBrackets.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CSharpBrackets\obj\Debug\CSharpBrackets.exe
-E:\Dropbox\Telerik Projects\ExamExercises Part 2\CSharpBrackets\obj\Debug\CSharpBrackets.pdb
