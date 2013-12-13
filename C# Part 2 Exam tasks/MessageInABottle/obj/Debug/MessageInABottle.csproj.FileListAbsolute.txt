@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\MessageInABottle\bin\Debug\MessageInABottle.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\MessageInABottle\bin\Debug\MessageInABottle.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\MessageInABottle\bin\Debug\MessageInABottle.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\MessageInABottle\obj\Debug\MessageInABottle.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\MessageInABottle\obj\Debug\MessageInABottle.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\MessageInABottle\obj\Debug\MessageInABottle.pdb

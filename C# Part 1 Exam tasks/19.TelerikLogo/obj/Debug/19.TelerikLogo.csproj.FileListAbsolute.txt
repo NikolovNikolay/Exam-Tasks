@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\19.TelerikLogo\bin\Debug\19.TelerikLogo.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\19.TelerikLogo\bin\Debug\19.TelerikLogo.exe
+E:\Dropbox\Telerik Projects\ExamExercises\19.TelerikLogo\bin\Debug\19.TelerikLogo.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\19.TelerikLogo\obj\Debug\19.TelerikLogo.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\19.TelerikLogo\obj\Debug\19.TelerikLogo.exe
+E:\Dropbox\Telerik Projects\ExamExercises\19.TelerikLogo\obj\Debug\19.TelerikLogo.pdb

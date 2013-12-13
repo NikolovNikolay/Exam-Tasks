@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\20.SandGlass\bin\Debug\20.SandGlass.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\20.SandGlass\bin\Debug\20.SandGlass.exe
+E:\Dropbox\Telerik Projects\ExamExercises\20.SandGlass\bin\Debug\20.SandGlass.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\20.SandGlass\obj\Debug\20.SandGlass.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\20.SandGlass\obj\Debug\20.SandGlass.exe
+E:\Dropbox\Telerik Projects\ExamExercises\20.SandGlass\obj\Debug\20.SandGlass.pdb

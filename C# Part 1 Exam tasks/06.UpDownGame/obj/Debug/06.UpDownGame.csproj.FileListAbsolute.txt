@@ -1,0 +1,5 @@
+E:\Dropbox\Telerik Projects\ExamExercises\06.UpDownGame\bin\Debug\06.UpDownGame.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\06.UpDownGame\bin\Debug\06.UpDownGame.exe
+E:\Dropbox\Telerik Projects\ExamExercises\06.UpDownGame\bin\Debug\06.UpDownGame.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\06.UpDownGame\obj\Debug\06.UpDownGame.exe
+E:\Dropbox\Telerik Projects\ExamExercises\06.UpDownGame\obj\Debug\06.UpDownGame.pdb

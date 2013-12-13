@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\GenomeDecoder\bin\Debug\GenomeDecoder.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\GenomeDecoder\obj\Debug\GenomeDecoder.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\GenomeDecoder\obj\Debug\GenomeDecoder.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\GenomeDecoder\bin\Debug\GenomeDecoder.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\GenomeDecoder\bin\Debug\GenomeDecoder.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\GenomeDecoder\obj\Debug\GenomeDecoder.csprojResolveAssemblyReference.cache

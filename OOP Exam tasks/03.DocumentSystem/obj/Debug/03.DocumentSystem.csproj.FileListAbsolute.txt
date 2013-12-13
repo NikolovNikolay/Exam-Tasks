@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\Test\03.DocumentSystem\bin\Debug\03.DocumentSystem.exe.config
+E:\Dropbox\Telerik Projects\Test\03.DocumentSystem\bin\Debug\03.DocumentSystem.exe
+E:\Dropbox\Telerik Projects\Test\03.DocumentSystem\bin\Debug\03.DocumentSystem.pdb
+E:\Dropbox\Telerik Projects\Test\03.DocumentSystem\obj\Debug\03.DocumentSystem.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\Test\03.DocumentSystem\obj\Debug\03.DocumentSystem.exe
+E:\Dropbox\Telerik Projects\Test\03.DocumentSystem\obj\Debug\03.DocumentSystem.pdb

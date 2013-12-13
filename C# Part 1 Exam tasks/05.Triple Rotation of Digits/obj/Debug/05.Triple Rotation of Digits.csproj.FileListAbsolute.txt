@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\05.Triple Rotation of Digits\bin\Debug\05.Triple Rotation of Digits.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\05.Triple Rotation of Digits\bin\Debug\05.Triple Rotation of Digits.exe
+E:\Dropbox\Telerik Projects\ExamExercises\05.Triple Rotation of Digits\bin\Debug\05.Triple Rotation of Digits.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\05.Triple Rotation of Digits\obj\Debug\05.Triple Rotation of Digits.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\05.Triple Rotation of Digits\obj\Debug\05.Triple Rotation of Digits.exe
+E:\Dropbox\Telerik Projects\ExamExercises\05.Triple Rotation of Digits\obj\Debug\05.Triple Rotation of Digits.pdb

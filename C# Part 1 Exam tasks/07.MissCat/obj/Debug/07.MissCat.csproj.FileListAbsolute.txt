@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\07.MissCat\bin\Debug\07.MissCat.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\07.MissCat\bin\Debug\07.MissCat.exe
+E:\Dropbox\Telerik Projects\ExamExercises\07.MissCat\bin\Debug\07.MissCat.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\07.MissCat\obj\Debug\07.MissCat.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\07.MissCat\obj\Debug\07.MissCat.exe
+E:\Dropbox\Telerik Projects\ExamExercises\07.MissCat\obj\Debug\07.MissCat.pdb

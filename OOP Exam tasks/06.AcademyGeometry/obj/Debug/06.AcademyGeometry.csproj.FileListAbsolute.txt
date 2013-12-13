@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\Test\06.AcademyGeometry\bin\Debug\06.AcademyGeometry.exe.config
+E:\Dropbox\Telerik Projects\Test\06.AcademyGeometry\bin\Debug\06.AcademyGeometry.exe
+E:\Dropbox\Telerik Projects\Test\06.AcademyGeometry\bin\Debug\06.AcademyGeometry.pdb
+E:\Dropbox\Telerik Projects\Test\06.AcademyGeometry\obj\Debug\06.AcademyGeometry.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\Test\06.AcademyGeometry\obj\Debug\06.AcademyGeometry.exe
+E:\Dropbox\Telerik Projects\Test\06.AcademyGeometry\obj\Debug\06.AcademyGeometry.pdb

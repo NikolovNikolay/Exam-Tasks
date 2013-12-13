@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\23.A-nacci\bin\Debug\23.A-nacci.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\23.A-nacci\bin\Debug\23.A-nacci.exe
+E:\Dropbox\Telerik Projects\ExamExercises\23.A-nacci\bin\Debug\23.A-nacci.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\23.A-nacci\obj\Debug\23.A-nacci.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\23.A-nacci\obj\Debug\23.A-nacci.exe
+E:\Dropbox\Telerik Projects\ExamExercises\23.A-nacci\obj\Debug\23.A-nacci.pdb

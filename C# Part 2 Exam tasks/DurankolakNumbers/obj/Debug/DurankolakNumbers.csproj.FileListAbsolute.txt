@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\DurankolakNumbers\bin\Debug\DurankolakNumbers.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\DurankolakNumbers\bin\Debug\DurankolakNumbers.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\DurankolakNumbers\bin\Debug\DurankolakNumbers.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\DurankolakNumbers\obj\Debug\DurankolakNumbers.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\DurankolakNumbers\obj\Debug\DurankolakNumbers.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\DurankolakNumbers\obj\Debug\DurankolakNumbers.pdb

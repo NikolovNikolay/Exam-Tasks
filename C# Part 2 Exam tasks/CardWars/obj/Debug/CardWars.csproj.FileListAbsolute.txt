@@ -1,0 +1,5 @@
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CardWars\bin\Debug\CardWars.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CardWars\bin\Debug\CardWars.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CardWars\bin\Debug\CardWars.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CardWars\obj\Debug\CardWars.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CardWars\obj\Debug\CardWars.pdb

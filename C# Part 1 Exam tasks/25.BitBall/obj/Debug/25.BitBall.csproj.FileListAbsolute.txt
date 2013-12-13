@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\25.BitBall\bin\Debug\25.BitBall.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\25.BitBall\bin\Debug\25.BitBall.exe
+E:\Dropbox\Telerik Projects\ExamExercises\25.BitBall\bin\Debug\25.BitBall.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\25.BitBall\obj\Debug\25.BitBall.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\25.BitBall\obj\Debug\25.BitBall.exe
+E:\Dropbox\Telerik Projects\ExamExercises\25.BitBall\obj\Debug\25.BitBall.pdb

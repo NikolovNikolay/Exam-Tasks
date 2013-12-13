@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CleanCode\bin\Debug\CleanCode.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CleanCode\bin\Debug\CleanCode.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CleanCode\bin\Debug\CleanCode.pdb
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CleanCode\obj\Debug\CleanCode.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CleanCode\obj\Debug\CleanCode.exe
+E:\Dropbox\Telerik Projects\ExamExercises Part 2\CleanCode\obj\Debug\CleanCode.pdb

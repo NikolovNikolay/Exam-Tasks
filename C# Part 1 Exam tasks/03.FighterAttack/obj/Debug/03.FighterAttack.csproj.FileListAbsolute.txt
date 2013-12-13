@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\03.FighterAttack\bin\Debug\03.FighterAttack.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\03.FighterAttack\bin\Debug\03.FighterAttack.exe
+E:\Dropbox\Telerik Projects\ExamExercises\03.FighterAttack\bin\Debug\03.FighterAttack.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\03.FighterAttack\obj\Debug\03.FighterAttack.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\03.FighterAttack\obj\Debug\03.FighterAttack.exe
+E:\Dropbox\Telerik Projects\ExamExercises\03.FighterAttack\obj\Debug\03.FighterAttack.pdb

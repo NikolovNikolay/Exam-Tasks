@@ -1,0 +1,5 @@
+E:\Dropbox\Telerik Projects\ExamExercises\22.TribonacciTriangle\bin\Debug\22.TribonacciTriangle.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\22.TribonacciTriangle\bin\Debug\22.TribonacciTriangle.exe
+E:\Dropbox\Telerik Projects\ExamExercises\22.TribonacciTriangle\bin\Debug\22.TribonacciTriangle.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\22.TribonacciTriangle\obj\Debug\22.TribonacciTriangle.exe
+E:\Dropbox\Telerik Projects\ExamExercises\22.TribonacciTriangle\obj\Debug\22.TribonacciTriangle.pdb

@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\Test\02.SoftwareAcademy\bin\Debug\02.SoftwareAcademy.exe.config
+E:\Dropbox\Telerik Projects\Test\02.SoftwareAcademy\bin\Debug\02.SoftwareAcademy.exe
+E:\Dropbox\Telerik Projects\Test\02.SoftwareAcademy\bin\Debug\02.SoftwareAcademy.pdb
+E:\Dropbox\Telerik Projects\Test\02.SoftwareAcademy\obj\Debug\02.SoftwareAcademy.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\Test\02.SoftwareAcademy\obj\Debug\02.SoftwareAcademy.exe
+E:\Dropbox\Telerik Projects\Test\02.SoftwareAcademy\obj\Debug\02.SoftwareAcademy.pdb

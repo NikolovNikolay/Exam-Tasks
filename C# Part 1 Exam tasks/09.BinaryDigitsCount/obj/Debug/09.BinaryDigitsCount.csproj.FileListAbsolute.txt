@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\09.BinaryDigitsCount\bin\Debug\09.BinaryDigitsCount.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\09.BinaryDigitsCount\bin\Debug\09.BinaryDigitsCount.exe
+E:\Dropbox\Telerik Projects\ExamExercises\09.BinaryDigitsCount\bin\Debug\09.BinaryDigitsCount.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\09.BinaryDigitsCount\obj\Debug\09.BinaryDigitsCount.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\09.BinaryDigitsCount\obj\Debug\09.BinaryDigitsCount.exe
+E:\Dropbox\Telerik Projects\ExamExercises\09.BinaryDigitsCount\obj\Debug\09.BinaryDigitsCount.pdb

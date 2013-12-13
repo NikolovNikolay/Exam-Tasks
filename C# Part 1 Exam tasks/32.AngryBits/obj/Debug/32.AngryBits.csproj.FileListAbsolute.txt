@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\32.AngryBits\bin\Debug\32.AngryBits.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\32.AngryBits\bin\Debug\32.AngryBits.exe
+E:\Dropbox\Telerik Projects\ExamExercises\32.AngryBits\bin\Debug\32.AngryBits.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\32.AngryBits\obj\Debug\32.AngryBits.exe
+E:\Dropbox\Telerik Projects\ExamExercises\32.AngryBits\obj\Debug\32.AngryBits.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\32.AngryBits\obj\Debug\32.AngryBits.csprojResolveAssemblyReference.cache

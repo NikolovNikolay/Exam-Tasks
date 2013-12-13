@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\01.CartesianCoordinateSystem\bin\Debug\01.CartesianCoordinateSystem.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\01.CartesianCoordinateSystem\bin\Debug\01.CartesianCoordinateSystem.exe
+E:\Dropbox\Telerik Projects\ExamExercises\01.CartesianCoordinateSystem\bin\Debug\01.CartesianCoordinateSystem.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\01.CartesianCoordinateSystem\obj\Debug\01.CartesianCoordinateSystem.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\01.CartesianCoordinateSystem\obj\Debug\01.CartesianCoordinateSystem.exe
+E:\Dropbox\Telerik Projects\ExamExercises\01.CartesianCoordinateSystem\obj\Debug\01.CartesianCoordinateSystem.pdb

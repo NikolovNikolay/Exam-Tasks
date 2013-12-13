@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\27.Poker\bin\Debug\27.Poker.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\27.Poker\obj\Debug\27.Poker.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\ExamExercises\27.Poker\bin\Debug\27.Poker.exe
+E:\Dropbox\Telerik Projects\ExamExercises\27.Poker\bin\Debug\27.Poker.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\27.Poker\obj\Debug\27.Poker.exe
+E:\Dropbox\Telerik Projects\ExamExercises\27.Poker\obj\Debug\27.Poker.pdb

@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\Test\05.AcademyEcosystem\bin\Debug\05.AcademyEcosystem.exe.config
+E:\Dropbox\Telerik Projects\Test\05.AcademyEcosystem\bin\Debug\05.AcademyEcosystem.exe
+E:\Dropbox\Telerik Projects\Test\05.AcademyEcosystem\bin\Debug\05.AcademyEcosystem.pdb
+E:\Dropbox\Telerik Projects\Test\05.AcademyEcosystem\obj\Debug\05.AcademyEcosystem.csprojResolveAssemblyReference.cache
+E:\Dropbox\Telerik Projects\Test\05.AcademyEcosystem\obj\Debug\05.AcademyEcosystem.exe
+E:\Dropbox\Telerik Projects\Test\05.AcademyEcosystem\obj\Debug\05.AcademyEcosystem.pdb
