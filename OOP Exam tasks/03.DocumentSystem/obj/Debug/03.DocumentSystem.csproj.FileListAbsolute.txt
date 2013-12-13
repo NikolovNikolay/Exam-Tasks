@@ -4,3 +4,9 @@ E:\Dropbox\Telerik Projects\Test\03.DocumentSystem\bin\Debug\03.DocumentSystem.p
 E:\Dropbox\Telerik Projects\Test\03.DocumentSystem\obj\Debug\03.DocumentSystem.csprojResolveAssemblyReference.cache
 E:\Dropbox\Telerik Projects\Test\03.DocumentSystem\obj\Debug\03.DocumentSystem.exe
 E:\Dropbox\Telerik Projects\Test\03.DocumentSystem\obj\Debug\03.DocumentSystem.pdb
+E:\Git\Exam-Tasks\OOP Exam tasks\03.DocumentSystem\bin\Debug\03.DocumentSystem.exe.config
+E:\Git\Exam-Tasks\OOP Exam tasks\03.DocumentSystem\bin\Debug\03.DocumentSystem.exe
+E:\Git\Exam-Tasks\OOP Exam tasks\03.DocumentSystem\bin\Debug\03.DocumentSystem.pdb
+E:\Git\Exam-Tasks\OOP Exam tasks\03.DocumentSystem\obj\Debug\03.DocumentSystem.csprojResolveAssemblyReference.cache
+E:\Git\Exam-Tasks\OOP Exam tasks\03.DocumentSystem\obj\Debug\03.DocumentSystem.exe
+E:\Git\Exam-Tasks\OOP Exam tasks\03.DocumentSystem\obj\Debug\03.DocumentSystem.pdb

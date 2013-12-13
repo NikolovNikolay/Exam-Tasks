@@ -4,3 +4,9 @@ E:\Dropbox\Telerik Projects\Test\06.AcademyGeometry\bin\Debug\06.AcademyGeometry
 E:\Dropbox\Telerik Projects\Test\06.AcademyGeometry\obj\Debug\06.AcademyGeometry.csprojResolveAssemblyReference.cache
 E:\Dropbox\Telerik Projects\Test\06.AcademyGeometry\obj\Debug\06.AcademyGeometry.exe
 E:\Dropbox\Telerik Projects\Test\06.AcademyGeometry\obj\Debug\06.AcademyGeometry.pdb
+E:\Git\Exam-Tasks\OOP Exam tasks\06.AcademyGeometry\bin\Debug\06.AcademyGeometry.exe.config
+E:\Git\Exam-Tasks\OOP Exam tasks\06.AcademyGeometry\bin\Debug\06.AcademyGeometry.exe
+E:\Git\Exam-Tasks\OOP Exam tasks\06.AcademyGeometry\bin\Debug\06.AcademyGeometry.pdb
+E:\Git\Exam-Tasks\OOP Exam tasks\06.AcademyGeometry\obj\Debug\06.AcademyGeometry.csprojResolveAssemblyReference.cache
+E:\Git\Exam-Tasks\OOP Exam tasks\06.AcademyGeometry\obj\Debug\06.AcademyGeometry.exe
+E:\Git\Exam-Tasks\OOP Exam tasks\06.AcademyGeometry\obj\Debug\06.AcademyGeometry.pdb
