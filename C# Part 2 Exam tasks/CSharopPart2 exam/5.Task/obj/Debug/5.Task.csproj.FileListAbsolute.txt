@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamPart2\5.Task\bin\Debug\5.Task.exe.config
+E:\Dropbox\Telerik Projects\ExamPart2\5.Task\bin\Debug\5.Task.exe
+E:\Dropbox\Telerik Projects\ExamPart2\5.Task\bin\Debug\5.Task.pdb
+E:\Dropbox\Telerik Projects\ExamPart2\5.Task\obj\Debug\5.Task.exe
+E:\Dropbox\Telerik Projects\ExamPart2\5.Task\obj\Debug\5.Task.pdb
+E:\Dropbox\Telerik Projects\ExamPart2\5.Task\obj\Debug\5.Task.csprojResolveAssemblyReference.cache
