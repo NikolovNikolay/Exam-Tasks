@@ -1,0 +1,5 @@
+E:\Dropbox\Telerik Projects\ExamExercises\exam4\bin\Debug\exam4.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\exam4\bin\Debug\exam4.exe
+E:\Dropbox\Telerik Projects\ExamExercises\exam4\bin\Debug\exam4.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\exam4\obj\Debug\exam4.exe
+E:\Dropbox\Telerik Projects\ExamExercises\exam4\obj\Debug\exam4.pdb

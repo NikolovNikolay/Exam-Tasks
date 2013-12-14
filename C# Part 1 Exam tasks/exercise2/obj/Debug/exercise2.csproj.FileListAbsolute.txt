@@ -1,0 +1,6 @@
+E:\Dropbox\Telerik Projects\ExamExercises\exercise2\bin\Debug\exercise2.exe.config
+E:\Dropbox\Telerik Projects\ExamExercises\exercise2\bin\Debug\exercise2.exe
+E:\Dropbox\Telerik Projects\ExamExercises\exercise2\bin\Debug\exercise2.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\exercise2\obj\Debug\exercise2.exe
+E:\Dropbox\Telerik Projects\ExamExercises\exercise2\obj\Debug\exercise2.pdb
+E:\Dropbox\Telerik Projects\ExamExercises\exercise2\obj\Debug\exercise2.csprojResolveAssemblyReference.cache
