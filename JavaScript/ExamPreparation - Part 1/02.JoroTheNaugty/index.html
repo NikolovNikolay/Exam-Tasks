@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="../scripts/js-console.js"></script>\
+    <script>
+
+        function Solve(args) {
+
+            var fieldData = args[0].split(" ");
+            var fieldRows = parseInt(fieldData[0]);
+            var fieldCols = parseInt(fieldData[1]);
+            var numberOfJumps = parseInt(fieldData[2]);
+
+            var coordinates = args[1].split(" ");
+            var currentRow = parseInt(coordinates[0]);
+            var currentCol = parseInt(coordinates[1]);
+
+            var jumps = [];
+            for (var i = 2, j = 0; i < args.length; i++, j++) {
+                jumps[j] = {
+                    row: parseInt((args[i].split(" "))[0]),
+                    col: parseInt((args[i].split(" "))[1])
+                }
+            }
+
+            var visited = [];
+            var moves = 0;
+            var sum = 0;
+
+            for (var i = 0; i < jumps.length; i++) {
+
+                if (!(currentRow >= 0 && currentRow < fieldRows) || !(currentCol >= 0 && currentCol < fieldCols)) {
+                    return "escaped " + sum;
+                }
+
+                if (visited[currentRow * fieldCols + currentCol]) {
+                    return "caught " + moves;
+                }
+
+                moves++;
+                visited[currentRow * fieldCols + currentCol] = true;
+                sum += (currentRow * fieldCols) + currentCol + 1;
+                
+                currentRow += jumps[i].row;
+                currentCol += jumps[i].col;
+
+                if (i == jumps.length - 1) {
+                    i = -1;
+                }
+            }
+
+        }
+
+        jsConsole.writeLine(Solve(["500 500 4", "25 25", "2 2", "2 -2", "1 1", "-1 1"]));
+
+        var r = 1;
+    </script>
+</body>
+</html>

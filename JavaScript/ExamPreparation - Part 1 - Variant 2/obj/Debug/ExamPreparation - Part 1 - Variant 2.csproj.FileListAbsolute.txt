@@ -1,0 +1,6 @@
+E:\GoogleDrive\Telerik Projects\Exams and exam preparation\JavaScript\ExamPreparation - Part 1 - Variant 2\bin\ExamPreparation - Part 1 - Variant 2.dll.config
+E:\GoogleDrive\Telerik Projects\Exams and exam preparation\JavaScript\ExamPreparation - Part 1 - Variant 2\bin\ExamPreparation - Part 1 - Variant 2.dll
+E:\GoogleDrive\Telerik Projects\Exams and exam preparation\JavaScript\ExamPreparation - Part 1 - Variant 2\bin\ExamPreparation - Part 1 - Variant 2.pdb
+E:\GoogleDrive\Telerik Projects\Exams and exam preparation\JavaScript\ExamPreparation - Part 1 - Variant 2\obj\Debug\ExamPreparation - Part 1 - Variant 2.csprojResolveAssemblyReference.cache
+E:\GoogleDrive\Telerik Projects\Exams and exam preparation\JavaScript\ExamPreparation - Part 1 - Variant 2\obj\Debug\ExamPreparation - Part 1 - Variant 2.dll
+E:\GoogleDrive\Telerik Projects\Exams and exam preparation\JavaScript\ExamPreparation - Part 1 - Variant 2\obj\Debug\ExamPreparation - Part 1 - Variant 2.pdb

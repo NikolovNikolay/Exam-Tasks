@@ -1,0 +1,149 @@
+﻿html,
+body,
+div,
+form,
+a,
+legend,
+input,
+fieldset,
+button,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+div#wrapper {
+    margin-left: 50px;
+}
+
+body {
+    font-family: Verdana;
+}
+
+body .invisible {
+    display: none;
+}
+
+body .current {
+    font-weight: bold;
+}
+
+body div a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+body div a:hover {
+    color: #666666;
+}
+
+body div form {
+    width: 450px;
+    margin-top: 10px;
+    background: color-from;
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #ffffff 20%, #595959 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #ffffff), color-stop(100%, #595959));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 20%, #595959 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 20%, #595959 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 20%, #595959 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 20%, #595959 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-from', endColorstr='@color-to', GradientType=0);
+    /* IE6-8 */
+    margin-top: -10px;
+}
+
+body div form fieldset {
+    border: 5px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    padding-top: -10px;
+    padding-right: 75px;
+    text-align: right;
+    padding-bottom: 10px;
+    height: 100%;
+}
+
+body div form fieldset legend {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: right;
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 10px;
+}
+
+body div form fieldset input {
+    border: 0;
+    border-radius: 15px;
+    padding: 0px 15px;
+    width: 150px;
+    margin: 4px 0;
+    line-height: 35px;
+    background: color-from;
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #020202 0%, #cacaca 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #020202), color-stop(100%, #cacaca));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #020202 0%, #cacaca 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #020202 0%, #cacaca 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #020202 0%, #cacaca 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #020202 0%, #cacaca 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-from', endColorstr='@color-to', GradientType=0);
+    /* IE6-8 */
+    color: white;
+}
+
+body div form fieldset input::-webkit-input-placeholder {
+    color: #a9a998;
+}
+
+body div form fieldset label {
+    font-weight: bold;
+}
+
+body div form fieldset button {
+    border: 2px solid black;
+    font-size: 1.2em;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: color-from;
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #0b0b0b 0%, #fcfcfc 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0b0b0b), color-stop(100%, #fcfcfc));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #0b0b0b 0%, #fcfcfc 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #0b0b0b 0%, #fcfcfc 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #0b0b0b 0%, #fcfcfc 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #0b0b0b 0%, #fcfcfc 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-from', endColorstr='@color-to', GradientType=0);
+    /* IE6-8 */
+}

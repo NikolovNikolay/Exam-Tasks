@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamPreparation - Part 1 - Variant 1", "ExamPreparation - Part 1\ExamPreparation - Part 1 - Variant 1.csproj", "{B79E4359-EDFE-483D-ACD2-C470FEBFE173}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamPreparation - Part 1 - Variant 2", "ExamPreparation - Part 1 - Variant 2\ExamPreparation - Part 1 - Variant 2.csproj", "{B28AC342-4D62-423F-80AF-BFF4CF2F167B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B79E4359-EDFE-483D-ACD2-C470FEBFE173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79E4359-EDFE-483D-ACD2-C470FEBFE173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79E4359-EDFE-483D-ACD2-C470FEBFE173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79E4359-EDFE-483D-ACD2-C470FEBFE173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28AC342-4D62-423F-80AF-BFF4CF2F167B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28AC342-4D62-423F-80AF-BFF4CF2F167B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28AC342-4D62-423F-80AF-BFF4CF2F167B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28AC342-4D62-423F-80AF-BFF4CF2F167B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="../scripts/js-console.js"></script>\
+    <script>
+
+        function Solve(params) {
+            var commands = [];
+            var definedVariables = {};
+
+            for (var i = 0; i < params.length; i++) {
+                //regex replaces all multiple whitespaces with one
+                commands[i] = params[i].replace(/\s+/g, ' ');
+            }
+
+
+            for (var i = 0; i < commands.length; i++) {
+                var currentCommand = commands[i];
+                var idexOfBracket = currentCommand.indexOf("[");
+                var indexOfDef = currentCommand.indexOf("def");
+
+                if (indexOfDef >= 0 && indexOfDef < idexOfBracket) {
+                    var variableName;
+                    var variableValue = 0;
+
+                    // regex matches all elements that have ' ' around them
+                    var rawMatchedData = currentCommand.match(/[^ ]+/g);
+                    variableName = rawMatchedData[1];
+                    if (variableName.indexOf("[") >= 0) {
+                        variableName = variableName.substring(0, variableName.indexOf("["));
+                    }
+
+                    // regex matches expression in [] brackets
+                    var expressionInBrackets = currentCommand.match(/\[([^\]]+)]/);
+
+                    // first regex replaces all ',', the second matches all elements that have ' ' around them
+                    var correctElemtsInBrackets = expressionInBrackets[1].replace(/,/g, ' ').match(/[^ ]+/g);
+
+                    if (currentCommand.indexOf("sum") >= 0 && currentCommand.indexOf("sum") < idexOfBracket && currentCommand.indexOf("sum") >= currentCommand.indexOf(variableName)) {
+                        for (var j = 0; j < correctElemtsInBrackets.length; j++) {
+                            var element = parseInt(correctElemtsInBrackets[j]);
+                            if (isNaN(element)) {
+                                if (!(definedVariables[correctElemtsInBrackets[j]].constructor == Array)) {
+                                    variableValue += definedVariables[correctElemtsInBrackets[j]];
+                                }
+                                else {
+                                    correctElemtsInBrackets[j] = definedVariables[correctElemtsInBrackets[j]];
+                                    for (var k = 0; k < correctElemtsInBrackets[j].length; k++) {
+                                        var parser = parseInt(correctElemtsInBrackets[j][k]);
+                                        if (!isNaN(parser)) {
+                                            variableValue += parser;
+                                        }
+                                        else {
+                                            variableValue += definedVariables[correctElemtsInBrackets[j][k]];
+                                        }
+                                    }
+                                }
+                            }
+                            else {
+                                variableValue += element;
+                            }
+                        }
+
+                        definedVariables[variableName] = variableValue;
+                    }
+                    else if (currentCommand.indexOf("min") >= 0 && currentCommand.indexOf("min") < idexOfBracket) {
+                        var min = Number.MAX_VALUE;
+                        for (var j = 0; j < correctElemtsInBrackets.length; j++) {
+                            var element = parseInt(correctElemtsInBrackets[j]);
+                            if (isNaN(element)) {
+                                if (!(definedVariables[correctElemtsInBrackets[j]].constructor == Array)) {
+                                    if (definedVariables[correctElemtsInBrackets[j]] < min) {
+                                        min = definedVariables[correctElemtsInBrackets[j]];
+                                    }
+                                }
+                                else {
+                                    correctElemtsInBrackets[j] = definedVariables[correctElemtsInBrackets[j]];
+                                    for (var k = 0; k < correctElemtsInBrackets[j].length; k++) {
+                                        var parser = parseInt(correctElemtsInBrackets[j][k]);
+                                        if (!isNaN(parser)) {
+                                            if (parser < min) {
+                                                min = parseInt(correctElemtsInBrackets[j][k]);
+                                            }
+                                        }
+                                        else {
+                                            if (definedVariables[correctElemtsInBrackets[j][k]] < min) {
+                                                min = parseInt(correctElemtsInBrackets[j][k]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else {
+                                if (element < min) {
+                                    min = element;
+                                }
+                            }
+                        }
+
+                        definedVariables[variableName] = min;
+                    }
+                    else if (currentCommand.indexOf("max") >= 0 && currentCommand.indexOf("max") < idexOfBracket && currentCommand.indexOf("max") >= currentCommand.indexOf(variableName)) {
+                        var max = Number.MIN_VALUE;
+                        for (var j = 0; j < correctElemtsInBrackets.length; j++) {
+                            var element = parseInt(correctElemtsInBrackets[j]);
+                            if (isNaN(element)) {
+                                if (!(definedVariables[correctElemtsInBrackets[j]].constructor == Array)) {
+                                    if (definedVariables[correctElemtsInBrackets[j]] > max) {
+                                        max = definedVariables[correctElemtsInBrackets[j]];
+                                    }
+                                }
+                                else {
+                                    correctElemtsInBrackets[j] = definedVariables[correctElemtsInBrackets[j]];
+                                    for (var k = 0; k < correctElemtsInBrackets[j].length; k++) {
+                                        var parser = parseInt(correctElemtsInBrackets[j][k]);
+                                        if (!isNaN(parser)) {
+                                            if (parser > max) {
+                                                max = parseInt(correctElemtsInBrackets[j][k]);
+                                            }
+                                        }
+                                        else {
+                                            if (definedVariables[correctElemtsInBrackets[j][k]] > max) {
+                                                max = parseInt(correctElemtsInBrackets[j][k]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else {
+                                if (element > max) {
+                                    max = element;
+                                }
+                            }
+                        }
+
+                        definedVariables[variableName] = max;
+                    }
+                    else if (currentCommand.indexOf("avg") >= 0 && currentCommand.indexOf("avg") < idexOfBracket) {
+                        for (var j = 0; j < correctElemtsInBrackets.length; j++) {
+                            var element = parseInt(correctElemtsInBrackets[j]);
+                            if (isNaN(element)) {
+                                if (!(definedVariables[correctElemtsInBrackets[j]].constructor == Array)) {
+                                    variableValue += definedVariables[correctElemtsInBrackets[j]];
+                                }
+                                else {
+                                    correctElemtsInBrackets[j] = definedVariables[correctElemtsInBrackets[j]];
+                                    for (var k = 0; k < correctElemtsInBrackets[j].length; k++) {
+                                        var parser = parseInt(correctElemtsInBrackets[j][k]);
+                                        if (!isNaN(parser)) {
+                                            variableValue += parser;
+                                        }
+                                        else {
+                                            variableValue += definedVariables[correctElemtsInBrackets[j][k]];
+                                        }
+                                    }
+                                }
+                            }
+                            else {
+                                variableValue += element;
+                            }
+                        }
+
+                        var length = correctElemtsInBrackets.length;
+                        for (var k = 0; k < correctElemtsInBrackets.length; k++) {
+                            if (correctElemtsInBrackets[k].constructor == Array) {
+                                length += (correctElemtsInBrackets[k].length - 1);
+                            }
+                        }
+                        
+                        definedVariables[variableName] = Math.floor(variableValue / length)
+                    }
+                    else {
+                        variableValue = correctElemtsInBrackets;
+                        definedVariables[variableName] = variableValue;
+                    }
+                }
+                else {
+
+                    var expressionInBrackets = currentCommand.match(/\[([^\]]+)]/);
+
+                    // first regex replaces all ',', the second matches all elements that have ' ' around them
+                    var correctElemtsInBrackets = expressionInBrackets[1].replace(/,/g, ' ').match(/[^ ]+/g);
+                    variableValue = 0;
+
+                    if (currentCommand.indexOf("sum") >= 0 && currentCommand.indexOf("sum") < idexOfBracket) {
+                        for (var j = 0; j < correctElemtsInBrackets.length; j++) {
+                            var element = parseInt(correctElemtsInBrackets[j]);
+                            if (isNaN(element)) {
+                                if (!(definedVariables[correctElemtsInBrackets[j]].constructor == Array)) {
+                                    variableValue += definedVariables[correctElemtsInBrackets[j]];
+                                }
+                                else {
+                                    correctElemtsInBrackets[j] = definedVariables[correctElemtsInBrackets[j]];
+                                    for (var k = 0; k < correctElemtsInBrackets[j].length; k++) {
+                                        var parser = parseInt(correctElemtsInBrackets[j][k]);
+                                        if (!isNaN(parser)) {
+                                            variableValue += parser;
+                                        }
+                                        else {
+                                            variableValue += definedVariables[correctElemtsInBrackets[j][k]];
+                                        }
+                                    }
+                                }
+                            }
+                            else {
+                                variableValue += element;
+                            }
+                        }
+
+                        return variableValue;
+                    }
+                    else if (currentCommand.indexOf("min") >= 0 && currentCommand.indexOf("min") < idexOfBracket) {
+                        var min = Number.MAX_VALUE;
+                        for (var j = 0; j < correctElemtsInBrackets.length; j++) {
+                            var element = parseInt(correctElemtsInBrackets[j]);
+                            if (isNaN(element)) {
+                                if (!(definedVariables[correctElemtsInBrackets[j]].constructor == Array)) {
+                                    if (definedVariables[correctElemtsInBrackets[j]] < min) {
+                                        min = definedVariables[correctElemtsInBrackets[j]];
+                                    }
+                                }
+                                else {
+                                    correctElemtsInBrackets[j] = definedVariables[correctElemtsInBrackets[j]];
+                                    for (var k = 0; k < correctElemtsInBrackets[j].length; k++) {
+                                        var parser = parseInt(correctElemtsInBrackets[j][k]);
+                                        if (!isNaN(parser)) {
+                                            if (parser < min) {
+                                                min = parseInt(correctElemtsInBrackets[j][k]);
+                                            }
+                                        }
+                                        else {
+                                            if (definedVariables[correctElemtsInBrackets[j][k]] < min) {
+                                                min = parseInt(correctElemtsInBrackets[j][k]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else {
+                                if (element < min) {
+                                    min = element;
+                                }
+                            }
+                        }
+
+                        return min;
+                    }
+                    else if (currentCommand.indexOf("max") >= 0 && currentCommand.indexOf("max") < idexOfBracket) {
+                        var max = Number.MIN_VALUE;
+                        for (var j = 0; j < correctElemtsInBrackets.length; j++) {
+                            var element = parseInt(correctElemtsInBrackets[j]);
+                            if (isNaN(element)) {
+                                if (!(definedVariables[correctElemtsInBrackets[j]].constructor == Array)) {
+                                    if (definedVariables[correctElemtsInBrackets[j]] > max) {
+                                        max = definedVariables[correctElemtsInBrackets[j]];
+                                    }
+                                }
+                                else {
+                                    correctElemtsInBrackets[j] = definedVariables[correctElemtsInBrackets[j]];
+                                    for (var k = 0; k < correctElemtsInBrackets[j].length; k++) {
+                                        var parser = parseInt(correctElemtsInBrackets[j][k]);
+                                        if (!isNaN(parser)) {
+                                            if (parser > max) {
+                                                max = parseInt(correctElemtsInBrackets[j][k]);
+                                            }
+                                        }
+                                        else {
+                                            if (definedVariables[correctElemtsInBrackets[j][k]] > max) {
+                                                max = parseInt(correctElemtsInBrackets[j][k]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else {
+                                if (element > max) {
+                                    max = element;
+                                }
+                            }
+                        }
+
+                        return max;
+                    }
+                    else if (currentCommand.indexOf("avg") >= 0 && currentCommand.indexOf("avg") < idexOfBracket) {
+                        for (var j = 0; j < correctElemtsInBrackets.length; j++) {
+                            var element = parseInt(correctElemtsInBrackets[j]);
+                            if (isNaN(element)) {
+                                if (!(definedVariables[correctElemtsInBrackets[j]].constructor == Array)) {
+                                    variableValue += definedVariables[correctElemtsInBrackets[j]];
+                                }
+                                else {
+                                    correctElemtsInBrackets[j] = definedVariables[correctElemtsInBrackets[j]];
+                                    for (var k = 0; k < correctElemtsInBrackets[j].length; k++) {
+                                        var parser = parseInt(correctElemtsInBrackets[j][k]);
+                                        if (!isNaN(parser)) {
+                                            variableValue += parser;
+                                        }
+                                        else {
+                                            variableValue += definedVariables[correctElemtsInBrackets[j][k]];
+                                        }
+                                    }
+                                }
+                            }
+                            else {
+                                variableValue += element;
+                            }
+                        }
+
+                        var length = correctElemtsInBrackets.length;
+                        for (var k = 0; k < correctElemtsInBrackets.length; k++) {
+                            if (correctElemtsInBrackets[k].constructor == Array) {
+                                length += (correctElemtsInBrackets[k].length - 1);
+                            }
+                        }
+
+                        return Math.floor(variableValue / length);
+                    }
+                    else {
+                        variableValue = correctElemtsInBrackets;
+                        return definedVariables[variableValue];
+                    }
+
+                }
+            }
+        }
+
+
+
+        jsConsole.writeLine(Solve(["def maxy max[100   ,600,6001,-100]",
+"def combo [maxy, maxy,maxy,maxy, 5,6]",
+"def summary sum[combo, maxy, -18000]",
+"def pe6o avg[summary,5,maxy]",
+"sum[1, pe6o]"]));
+    </script>
+</body>
+</html>

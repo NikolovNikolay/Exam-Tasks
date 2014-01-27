@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="../scripts/js-console.js"></script>\
+    <script>
+
+        function Solve(params) {
+            var matrixData = params[0].split(" ");
+            var matrixCols = parseInt(matrixData[1]);
+            var matrixRows = parseInt(matrixData[0]);
+
+            var coordinates = params[1].split(" ");
+            var currentRow = parseInt(coordinates[0]);
+            var currentCol = parseInt(coordinates[1]);
+
+            var matrix = {};
+            var symbols = {};
+            var visited = {};
+
+            for (var i = 0; i < matrixRows; i++) {
+                matrix[i] = [];
+                visited[i] = [];
+                for (var j = 0; j < matrixCols; j++) {
+                    matrix[i][j] = (j + 1) + (i * matrixCols);
+                    visited[i][j] = false;
+                }
+            }
+
+            for (var i = 2; i < params.length; i++) {
+                var line = params[i];
+                symbols[i - 2] = [];
+                for (var j = 0; j < line.length; j++) {
+                    symbols[i - 2][j] = line[j];
+                }
+            }
+
+            var sum = 0;
+            var moves = 0;
+
+            while (true) {
+                sum += matrix[currentRow][currentCol];
+                visited[currentRow][currentCol] = true;
+                switch (symbols[currentRow][currentCol]) {
+                    case "l": currentCol--; break;
+                    case "r": currentCol++; break;
+                    case "u": currentRow--; break;
+                    case "d": currentRow++; break;
+                }
+                
+                moves++;
+
+                if (!(currentRow >= 0 && currentRow < matrixRows) || !(currentCol >= 0 && currentCol < matrixCols)) {
+                    return "out " + sum;
+                }
+
+                if (visited[currentRow][currentCol]) {
+                    return "lost " + moves;
+                }
+            }
+        }
+
+
+        jsConsole.writeLine(Solve(["5 8","0 0","rrrrrrrd","rludulrd","lurlddud","urrrldud","ulllllll"]));
+    </script>
+</body>
+</html>

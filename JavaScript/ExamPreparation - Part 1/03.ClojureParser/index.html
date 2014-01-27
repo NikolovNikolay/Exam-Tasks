@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="../scripts/js-console.js"></script>\
+    <script>
+
+        function Solve(rawCommands) {
+            var commands = [];
+            var functions = {};
+            for (var i = 0; i < rawCommands.length; i++) {
+                commands[i] = rawCommands[i].replace(/\s+/g, ' ');
+            }
+            
+            for (var i = 0; i < commands[i].length; i++) {
+                if (commands[i].indexOf("def") >= 0) {
+                    var indexOfWhiteSpace = commands[i].indexOf(" ", commands[i].indexOf("def") + 4);
+                    var functionName = commands[i].substring(5, indexOfWhiteSpace).trim();
+                    var functionValue;
+                    if (commands[i][commands[i].indexOf(functionName) + functionName.length + 1] == '(') {
+                        var indexOfClosingBracket = commands[i].indexOf(")");
+                        var rawFunctionValue = commands[i].substring(commands[i].indexOf(functionName) + functionName.length + 2, indexOfClosingBracket);
+                        var rawFunctionValueElements = rawFunctionValue.match(/[^ ]+/g);
+
+                        switch (rawFunctionValueElements[0]) {
+                            case "+": functionValue = additionOfElements(rawFunctionValueElements); break;
+                            case "-": functionValue = subtractionOfElements(rawFunctionValueElements); break;
+                            case "/": functionValue = divisionOfElements(rawFunctionValueElements);
+                                if (!functionValue && functionValue !== 0) {
+                                    return "Division by zero! At Line:" + (i + 1);
+                                }
+                                break;
+                            case "*": functionValue = multiplyElements(rawFunctionValueElements); break;
+                        }
+
+                        functions[functionName] = functionValue;
+                    }
+                    else {
+                        var rawCommand = commands[i].replace('(', '');
+                        rawCommand = rawCommand.replace(')', '');
+                        var commandElements = rawCommand.match(/[^ ]+/g);
+                        functionValue = parseInt(commandElements[2]);
+                        if(isNaN(functionValue)){
+                            functionValue = functions[commandElements[2]];
+                        }
+                        functions[functionName] = functionValue;
+                    }
+
+                }
+                else {
+                    var rawCommand = commands[i].replace('(', '');
+                    rawCommand = rawCommand.replace(')', '');
+                    var commandElements = rawCommand.match(/[^ ]+/g);
+
+                    switch (commandElements[0]) {
+                        case "+": return additionOfElements(commandElements);
+                        case "-": return subtractionOfElements(commandElements);
+                        case "/": functionValue = divisionOfElements(commandElements);
+                            if (!functionValue && functionValue!== 0) {
+                                return "Division by zero! At Line:" + (i + 1);
+                            }
+                            else {
+                                return functionValue;
+                            }
+                            break;
+                        case "*": return multiplyElements(commandElements); break;
+                    }
+                }
+            }
+
+            function multiplyElements(array) {
+                var sum = additionOfElements([0, array[1]]);
+
+                for (var i = 2; i < array.length; i++) {
+                    var parsedNum = parseInt(array[i])
+                    
+                    if (isNaN(parsedNum)) {
+                        sum *= functions[array[i]];
+                    }
+                    else {
+                        sum *= parsedNum;
+                    }
+                }
+
+                return sum;
+            }
+
+            function additionOfElements(array) {
+                var sum = 0;
+                for (var i = 1; i < array.length; i++) {
+                    var parsedNum = parseInt(array[i])
+                    if (isNaN(parsedNum)) {
+                        sum += functions[array[i]];
+                    }
+                    else {
+                        sum += parsedNum;
+                    }
+                }
+
+                return sum;
+            }
+
+            function subtractionOfElements(array) {
+                var sum = additionOfElements([0, array[1]]);
+                for (var i = 2; i < array.length; i++) {
+                    var parsedNum = parseInt(array[i])
+                    if (isNaN(parsedNum)) {
+                        sum -= functions[array[i]];
+                    }
+                    else {
+                        sum -= parsedNum;
+                    }
+                }
+
+                return sum;
+            }
+
+            function divisionOfElements(array) {
+                var sum = additionOfElements([0, array[1]]);
+                for (var i = 2; i < array.length; i++) {
+                    var parsedNum = parseInt(array[i])
+                    if (parsedNum == 0 || functions[array[i]] == 0) {
+                        return false;
+                    }
+                    if (isNaN(parsedNum)) {
+                        sum = Math.floor(sum / functions[array[i]]);
+                    }
+                    else {
+                        sum = Math.floor( sum / parsedNum);
+                    }
+                }
+
+                return sum;
+            }
+        }
+        jsConsole.writeLine(Solve(["(def func0 0)","(def func1 (+ 1 func0 ))",
+"(def func2 (+ 2 func1 func0 ))",
+"(def func3 (+ 3 func2 func1 func0 ))",
+"(def func4 (+ 4 func3 func2 func1 func0 ))",
+"(def func5 (+ 5 func4 func3 func2 func1 func0 ))",
+"(def func6 (+ 6 func5 func4 func3 func2 func1 func0 ))",
+"(def func7 (+ 7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func8 (+ 8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func9 (+ 9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func10 (+ 10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func11 (+ 11 func10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func12 (+ 12 func11 func10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func13 (+ 13 func12 func11 func10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func14 (+ 14 func13 func12 func11 func10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func15 (+ 15 func14 func13 func12 func11 func10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func16 (+ 16 func15 func14 func13 func12 func11 func10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func17 (+ 17 func16 func15 func14 func13 func12 func11 func10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func18 (+ 18 func17 func16 func15 func14 func13 func12 func11 func10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func19 (+ 19 func18 func17 func16 func15 func14 func13 func12 func11 func10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(def func20 (+ 20 func19 func18 func17 func16 func15 func14 func13 func12 func11 func10 func9 func8 func7 func6 func5 func4 func3 func2 func1 func0 ))",
+"(+ func20 1)"]));
+
+    </script>
+</body>
+</html>

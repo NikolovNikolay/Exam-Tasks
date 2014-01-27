@@ -1,0 +1,100 @@
+﻿html,
+body,
+li,
+ul,
+a,
+div,
+table,
+thead,
+tr,
+td,
+th,
+tbody,
+p,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-size: 18px;
+}
+body .current div {
+  display: block;
+  position: relative;
+  color: #444444;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #aaa;
+  padding-right: 15px;
+}
+body .current div h1 {
+  display: block;
+  font-size: 1.6em;
+  color: #5e5e5e;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+body .current div p {
+  text-align: justify;
+}
+body #wrapper {
+  width: 500px;
+}
+body ul {
+  list-style-type: none;
+  border: 1px solid black;
+  margin: 50px 50px;
+}
+body ul li div {
+  display: none;
+}
+body ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #444;
+  font-size: 1.3em;
+  font-weight: bold;
+  background: #eeeeee;
+  background: -moz-linear-gradient(top, #eeeeee 0%, #dddddd 37%, #b6b6b6 70%, #aaaaaa 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(37%, #dddddd), color-stop(70%, #b6b6b6), color-stop(100%, #aaaaaa));
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #dddddd 37%, #b6b6b6 70%, #aaaaaa 100%);
+  background: -o-linear-gradient(top, #eeeeee 0%, #dddddd 37%, #b6b6b6 70%, #aaaaaa 100%);
+  background: -ms-linear-gradient(top, #eeeeee 0%, #dddddd 37%, #b6b6b6 70%, #aaaaaa 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #dddddd 37%, #b6b6b6 70%, #aaaaaa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#aaaaaa', GradientType=0);
+}
+body ul li a:hover {
+  background-color: #aaa;
+}
+body ul li:not(:last-child) {
+  border-bottom: 2px solid black;
+}
+body table {
+  border-collapse: collapse;
+  margin: 6px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top-left-radius: 15px;
+}
+body table th,
+body table td {
+  border: 1px solid black;
+  padding: 5px;
+  background: #ececec;
+  background: -moz-linear-gradient(top, #ececec 0%, #7f7f7f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #7f7f7f));
+  background: -webkit-linear-gradient(top, #ececec 0%, #7f7f7f 100%);
+  background: -o-linear-gradient(top, #ececec 0%, #7f7f7f 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, #7f7f7f 100%);
+  background: linear-gradient(to bottom, #ececec 0%, #7f7f7f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#7f7f7f', GradientType=0);
+}
+body table tbody td {
+  color: white;
+}

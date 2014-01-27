@@ -1,0 +1,123 @@
+﻿html,
+body,
+div,
+ul,
+li,
+a,
+fieldset,
+legend,
+label,
+input,
+select,
+option,
+textarea,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+body ul#popup-box {
+    list-style-type: none;
+    width: 110px;
+}
+
+body ul#popup-box > li {
+    border-bottom: 1px solid black;
+}
+
+body ul#popup-box > li:first-of-type {
+    border-top: 1px solid black;
+}
+
+body ul#popup-box > li > a {
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 7px;
+    color: black;
+}
+
+body ul#popup-box > li > a > img {
+    display: inline-block;
+    height: 25px;
+}
+
+body ul#popup-box > li > a.current {
+    font-weight: bold;
+}
+
+body #wrapper {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+body .popup-item > a {
+    border: 1px poslid black;
+}
+
+body .popup-item {
+    position: relative;
+}
+
+body .popup-content {
+    position: absolute;
+    left: 120px;
+    top: 0px;
+}
+
+body .popup-content a {
+    border: 1px solid black;
+    padding: 1px 5px 1px 5px;
+    position: absolute;
+    left: 180px;
+    top: 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+body .popup-content div > fieldset {
+    border: 1px solid black;
+    padding: 15px 15px 15px 15px;
+}
+
+body .popup-content div > fieldset > legend {
+    padding: 0 2px;
+    color: #333333;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+body .popup-content div > fieldset button {
+    color: #333333;
+    background: color-from;
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #cacaca 0%, #686868 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cacaca), color-stop(100%, #686868));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cacaca 0%, #686868 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #cacaca 0%, #686868 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #cacaca 0%, #686868 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #cacaca 0%, #686868 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-from', endColorstr='@color-to', GradientType=0);
+    /* IE6-8 */
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 0;
+}
+
+body .popup-content div > fieldset button:hover {
+    background: #cccccc;
+}
+
+body div.invisible {
+    display: none;
+}
