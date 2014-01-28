@@ -1,0 +1,68 @@
+﻿html, body, div, ul, li, a, img, span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    ul {
+        list-style-type: none;
+    }
+
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-size: 16px;
+
+    div#wrapper {
+        margin: 15px 15px;
+        border: 10px solid #ccc;
+        border-radius: 5px;
+        background-color: #ccc;
+        width: 680px;
+        height: 418px;
+
+        div.holder {
+            float: left;
+
+            img {
+                border-radius: 5px;
+                height: 414px;
+            }
+        }
+
+        div.playlist {
+            position: relative;
+            margin-left: 560px;
+
+            ul {
+                li {
+                    padding-top: 5px;
+                    padding-left: 5px;
+                    padding-bottom: 1px;
+                    border-bottom: 1px solid black;
+
+
+                    a {
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                            color: black;
+                        }
+
+                        img {
+                            margin-left: 12px;
+                            border-radius: 10px;
+                        }
+
+                        span {
+                            margin: 3px;
+                            color: black;
+                            font-weight: bold;
+                            position: relative;
+                            bottom: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
